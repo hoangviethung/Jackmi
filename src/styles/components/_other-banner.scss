@@ -1,0 +1,8 @@
+.other-banner {
+	.img {
+		height: 530px;
+		@media (max-width: 1024.98px) {
+			height: 350px;
+		}
+	}
+}

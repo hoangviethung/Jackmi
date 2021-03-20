@@ -1,0 +1,27 @@
+extends ../layouts/_layout
+
+block var
+	- let title = "Sign in"
+block banner,breadcrumb
+	include ../layouts/_breadcrumb
+block main
+	.account__sign-in-up.pd-70
+		.container
+			form.form-signinup(action="")
+				h2.text-center.text-uppercase Đăng nhập
+				.form-group
+					.icon
+						img.svg(data-src="./resources/icons/form-email.svg")
+					input.form-control(type="text" placeholder="Email của bạn")
+				.form-group.form-password
+					.icon
+						img.svg(data-src="./resources/icons/lock.svg")
+					input.form-control(type="password" placeholder="Nhập mật khẩu")
+					.view-password
+				.form-group.form-button
+					button.btn.btn-signinup.text-uppercase Đăng nhập
+				.form-group.form-remember
+					label.custom__input--checkbox
+						input(type="checkbox", name="")
+						span Ghi nhớ mật khẩu
+					a(href="#") Quên mật khẩu

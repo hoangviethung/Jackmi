@@ -1,0 +1,79 @@
+section.tab-products-homepage
+	.container
+		.tab-products-homepage-wrapper
+			.row
+				.block-left.col-md-3
+					.tab-filter-wrapper
+						ul.list-tab
+							li.item-tab.active sản phẩm mới
+							li.item-tab bán chạy
+							li.item-tab giảm giá
+					.slider-tab-products-homepage-buttons
+						.home-slider-tab-product-button-prev
+							img(src="./resources/icons/arrow-prev-slider-home-tab-products.png", alt="PREV")
+						.home-slider-tab-product-button-next
+							img(src="./resources/icons/arrow-next-slider-home-tab-products.png", alt="NEXT")
+				.block-right.col-md-9
+					.slider-tab-products-homepage
+						.swiper-container
+							.swiper-wrapper
+								-for(v=1;v<4;v++)
+									.swiper-slide
+										a(href="product-detail.html").product-wrapper.has-shadow
+											.product__block
+												.product__image
+													img.object-cover.fullsize.lazyload.blur-up(data-src=`resources/images/products/products-homepage-01.jpg`, alt="PRODUCT")
+												.product__favorite
+													.btn-add-favorite
+											.product__text
+												.product__name
+													h3.lcl.lcl-2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem ipsam repellendus omnis quis? Quas, aspernatur a. Maxime, cum dolorem corporis fugit libero, illum blanditiis saepe repellendus optio error doloribus suscipit?
+												.product__description
+													p.lcl.lcl-2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet atque numquam necessitatibus quibusdam repellendus, sint dolor fugiat rerum iusto doloribus libero deleniti velit illum placeat suscipit ratione temporibus omnis eum?
+											// .product__price
+												p.original-deal
+													span 18.200.000
+													| đ
+												p
+													span 36.400.000đ
+													| đ
+											// .product__moreinfomation
+												.rate-review
+													//- TRUYỂN DATA SỐ SAO ĐÁN VÀO ATTR "DATA-RATE" ĐỂ FILL MÀU
+													.rating-input(data-rate="5")
+														-for(i=0;i<5;i++)
+															.star
+																img.svg(src="./resources/icons/rate.svg", alt="rate")
+													.rate-count (100)
+												.count-sold Đã bán
+													span 2000
+								-for(x=1;x<4;x++)
+									.swiper-slide
+										a(href="product-detail.html").product-wrapper.has-shadow
+											.product__block
+												.product__image
+													img.object-cover.fullsize.lazyload.blur-up(data-src=`resources/images/products/products-homepage-01.jpg`, alt="PRODUCT")
+												.product__favorite
+													.btn-add-favorite
+											.product__text
+												.product__name
+													h3.lcl.lcl-2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem ipsam repellendus omnis quis? Quas, aspernatur a. Maxime, cum dolorem corporis fugit libero, illum blanditiis saepe repellendus optio error doloribus suscipit?
+												.product__description
+													p.lcl.lcl-2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet atque numquam necessitatibus quibusdam repellendus, sint dolor fugiat rerum iusto doloribus libero deleniti velit illum placeat suscipit ratione temporibus omnis eum?
+											// .product__price
+												p.original-deal
+													span 18.200.000
+													| đ
+												p
+													span 36.400.000đ
+													| đ
+											// .product__moreinfomation
+												.rate-review
+													//- TRUYỂN DATA SỐ SAO ĐÁN VÀO ATTR "DATA-RATE" ĐỂ FILL MÀU
+													.rating-input(data-rate="5")
+														-for(i=0;i<5;i++)
+															.star
+																img.svg(src="./resources/icons/rate.svg", alt="rate")
+													.rate-count (100)
+												.count-sold Đã bán
+													span 2000

@@ -1,0 +1,25 @@
+section.products-global.products-other
+	.container
+		.products-global-wrapper
+			.products-global-head
+				h2.block-title Tin tức liên quan
+				.slider-item-other-buttons
+					.slider-item-other-prev
+					.slider-item-other-next
+			.products-global-body
+				.slider-products-other
+					.swiper-container
+						.swiper-wrapper.row
+							-for(i=0;i<4;i++)
+								.swiper-slide.col-6.col-lg-3
+									a(href="news-detail.html").news-item-wrapper
+										.news__image.overflow-hidden
+											img.object-cover.fullsize(src=`resources/images/news/news-item-01.jpg`, alt="NEWS")
+										.news__text
+											.news__title
+												h3.lcl.lcl-2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem ipsam repellendus omnis quis? Quas, aspernatur a. Maxime, cum dolorem corporis fugit libero, illum blanditiis saepe repellendus optio error doloribus suscipit?
+											.news__description
+												p.lcl.lcl-3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet atque numquam necessitatibus quibusdam repellendus, sint dolor fugiat rerum iusto doloribus libero deleniti velit illum placeat suscipit ratione temporibus omnis eum?
+											.news__block
+												.news__time 22/07/2020
+												.btn.btn-news-detail Chi tiết

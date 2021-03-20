@@ -1,0 +1,65 @@
+extends ../layouts/_layout
+
+block var
+	- let title = "Question"
+block banner,breadcrumb
+	include ../layouts/_breadcrumb
+block main
+	.cartAnnounce
+		.container
+			.cartAnnounce__wrapper.d-flex.align-center
+				span.mdi.mdi-alert-circle-outline 
+				p Miễn phí giao hàng cho đơn hàng tối thiểu 1 tỉ đồng
+	section.Profile
+		.container
+			.row
+				.col-left
+					include ../components/profile/aside
+				.col-right
+					section.Review
+						.profile-table-wrapper
+							.profile__title.d-flex.align-center.flex-wrap
+								h2.text-uppercase CÂU HỎI CỦA TÔI 
+									span (4)
+							.review__list
+								-for(x=0;x<3;x++)
+									.review__item
+										.item__img
+											img(src="./resources/images/products/thumbnail.png", alt="thumbnail")
+										.item__information
+											h2.name-product Tên đầy đủ của sản phẩm này là...
+											span.date-review dd-mm-yyyy
+											.rate-review
+												//  TRUYỂN DATA SỐ SAO ĐÁN VÀO ATTR "DATA-RATE" ĐỂ FILL MÀU
+												// .rating-input(data-rate="3")
+													-for(i=0;i<5;i++)
+														.star
+															img.svg(src="./resources/icons/rate.svg", alt="rate")
+												//-  THÊM ATTR "FAILED" ĐỂ ĐỔI THÀNH MÀU ĐỎ
+												span.rate-status Đang chờ duyệt
+												span.rate-status(success) Đã duyệt
+												span.rate-status(answered) Đã phản hồi
+											.content-review
+												p Sản phẩm này bảo hành bao nhiêu lâu vậy shop?
+													a(href="#") Xem phản hồi
+								-for(j=0;j<3;j++)
+									.review__item
+										.item__img
+											img(src="./resources/images/products/thumbnail.png", alt="thumbnail")
+										.item__information
+											h2.name-product Tên đầy đủ của sản phẩm này là...
+											span.date-review dd-mm-yyyy
+											.rate-review
+												// TRUYỂN DATA SỐ SAO ĐÁN VÀO ATTR "DATA-RATE" ĐỂ FILL MÀU
+												// .rating-input(data-rate="3")
+													-for(i=0;i<5;i++)
+														.star
+															img.svg(src="./resources/icons/rate.svg", alt="rate")
+												// THÊM ATTR "FAILED" ĐỂ ĐỔI THÀNH MÀU ĐỎ
+												span.rate-status Đang chờ duyệt
+												span.rate-status(success) Đã duyệt
+												span.rate-status(answered) Đã phản hồi
+											.content-review
+												p Sản phẩm này bảo hành bao nhiêu lâu vậy shop?
+													a(href="product-detail.html") Xem phản hồi
+						include ../layouts/_pagination

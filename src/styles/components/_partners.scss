@@ -1,0 +1,20 @@
+.partners {
+	padding-top: 60px;
+	padding-bottom: 44px;
+	@media (max-width: 1024.98px) {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	@media (max-width: 767.98px) {
+		padding-top: 22px;
+		padding-bottom: 22px;
+	}
+}
+
+.slider-partners {
+	padding: 44px 34px;
+	background: map-get($color, trang);
+	@media (max-width: 767.98px) {
+		padding: 22px 12px;
+	}
+}

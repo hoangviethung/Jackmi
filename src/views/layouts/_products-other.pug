@@ -1,0 +1,42 @@
+section.products-global.products-other
+	.container
+		.products-global-wrapper
+			.products-global-head
+				h2.block-title Sản phẩm tương tự
+				.slider-item-other-buttons
+					.slider-item-other-prev
+					.slider-item-other-next
+			.products-global-body
+				.slider-products-other
+					.swiper-container
+						.swiper-wrapper.row
+							-for(k=0;k<4;k++)
+								.swiper-slide.col-6.col-lg-3
+									a(href="product-detail.html").product-wrapper.has-shadow
+										.product__block
+											.product__image
+												img.object-cover.fullsize.lazyload.blur-up(data-src=`resources/images/products/products-homepage-01.jpg`, alt="PRODUCT")
+											.product__favorite
+												.btn-add-favorite
+										.product__text
+											.product__name
+												h3.lcl.lcl-2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem ipsam repellendus omnis quis? Quas, aspernatur a. Maxime, cum dolorem corporis fugit libero, illum blanditiis saepe repellendus optio error doloribus suscipit?
+											// .product__description
+												p.lcl.lcl-2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet atque numquam necessitatibus quibusdam repellendus, sint dolor fugiat rerum iusto doloribus libero deleniti velit illum placeat suscipit ratione temporibus omnis eum?
+										.product__price
+											p.original-deal
+												span 18.200.000
+												| đ
+											p
+												span 36.400.000đ
+												| đ
+										.product__moreinfomation
+											.rate-review
+												// TRUYỂN DATA SỐ SAO ĐÁN VÀO ATTR "DATA-RATE" ĐỂ FILL MÀU
+												.rating-input(data-rate="5")
+													-for(i=0;i<5;i++)
+														.star
+															img.svg(src="./resources/icons/rate.svg", alt="rate")
+												.rate-count (100)
+											.count-sold Đã bán
+												span 2000

@@ -1,0 +1,99 @@
+section.category
+	.container
+		.category-wrapper
+			.row
+				.col-md-4.col-lg-4.col-xl-3
+					.button-show-filter-mobile.mobile.active BỘ LỌC
+					.filter-products-wrapper
+						.filter-products
+							.item-filter.filter-products__sort
+								select.sort-select(name="#")
+									option(value="0") Mặc định
+									option(value="0") Tên A - Z
+									option(value="0") Tên Z - A
+									option(value="0") Giá Thấp - Cao
+									option(value="0") Giá Cao - Thấp
+							.item-filter.filter-products__color
+								h4.title-filter Màu sắc
+								// ADD CLASS 'items-checkbox-selector' and '.checkbox__item' * 2 type="checbox" and type="radio"
+								.items-checkbox-selector.list-color
+									label.item-color(style="--color:#6EB2FB")
+										.checkbox__item
+											input(type="checkbox")
+									label.checkbox__item.item-color(style="--color:#00D3CA")
+										.checkbox__item
+											input(type="checkbox")
+									label.item-color(style="--color:#F62F5E")
+										.checkbox__item
+											input(type="checkbox")
+									label.item-color(style="--color:#FE5C07")
+										.checkbox__item
+											input(type="checkbox")
+									label.item-color(style="--color:#F8E71C")
+										.checkbox__item
+											input(type="checkbox")
+									label.item-color(style="--color:#9013FE")
+										.checkbox__item
+											input(type="checkbox")
+							.item-filter.filter-products__size
+								h4.title-filter Kích thước
+									span (Hướng dẫn chọn size)
+								// ADD CLASS 'items-checkbox-selector' and '.checkbox__item' * 2 type="checbox" and type="radio"
+								.items-checkbox-selector.list-size
+									label.item-size
+										.checkbox__item
+											input(type="checkbox")
+											h5.name-size XS
+									label.item-size
+										.checkbox__item
+											input(type="checkbox")
+											h5.name-size S
+									label.item-size
+										.checkbox__item
+											input(type="checkbox")
+											h5.name-size M
+									label.item-size
+										.checkbox__item
+											input(type="checkbox")
+											h5.name-size L
+									label.item-size
+										.checkbox__item
+											input(type="checkbox")
+											h5.name-size XL
+							.item-filter.filter-products__price
+								h4.title-filter Mức giá
+								#slider-filter-price(min-price="200000" max-price="10000000")
+								#slider-filter-price-value
+									span.min
+									span.max
+								// LẤY DATA KHOẢNG GIÁ FILTER Ở ĐÂY
+								input#slider-filter-price-input(hidden value)
+							.item-filter.filter-products__brand
+								h4.title-filter Thương hiệu
+								.list-brand
+									-for(i=0;i<4;i++)
+										.item-brand
+											label
+												._checkbox-custom
+													input(type="checkbox")
+												span Apple
+										.item-brand
+											label
+												._checkbox-custom
+													input(type="checkbox")
+												span Oppo
+										.item-brand
+											label
+												._checkbox-custom
+													input(type="checkbox")
+												span Samsumg
+						.filter-products__buttons
+							.btn.btn-submit-filter-products Chọn
+							.btn.btn-reset-filter-products Reset
+				.col-md-8.col-lg-8.col-xl-9
+					.list-products-wrapper
+						.row
+							-for(x=0;x<10;x++)
+								.col-xl-4.col-6
+									include ../../layouts/_product
+		include ../../layouts/_pagination

@@ -1,0 +1,37 @@
+.about {
+	margin-top: -200px;
+	@media (max-width: 1024.98px) {
+		margin-top: -64px;
+	}
+}
+
+.about-wrapper {
+	background: map-get($color, trang);
+	padding: 40px 105px;
+	border-radius: 10px;
+	.block-title {
+		font-size: 3.4rem;
+		font-weight: 700;
+		@media (max-width: 575.98px) {
+			font-size: 2.2rem;
+		}
+	}
+	.date-time {
+		margin-top: 12px;
+	}
+	.content-detail-description {
+		margin-top: 80px;
+		@media (max-width: 1024.98px) {
+			margin-top: 40px;
+		}
+		@media (max-width: 767.98px) {
+			margin-top: 24px;
+		}
+	}
+	@media (max-width: 1024.98px) {
+		padding: 50px;
+	}
+	@media (max-width: 767.98px) {
+		padding: 12px;
+	}
+}

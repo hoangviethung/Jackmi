@@ -1,0 +1,12 @@
+extends ../layouts/_layout
+
+block var
+	- let title = "Product Detail"
+block banner,breadcrumb
+	include ../layouts/_breadcrumb
+block main
+	section.ProductDetail
+		.container
+			include ../components/product-detail/p-1
+			include ../components/product-detail/p-2
+	include ../layouts/_products-other

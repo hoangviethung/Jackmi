@@ -1,0 +1,34 @@
+section.deal-hot
+	.deal-hot-wrapper
+		.container
+			.swiper-container
+				.swiper-wrapper
+					.swiper-slide
+						.deal-hot-block
+							.deal-hot__image
+								.img
+									img.lazyload.blur-up(data-src="./resources/images/products/deal-homepage.png", alt="DEAL-HOT")
+							.deal-hot__infomation
+								.infomation-wrapper
+									.infomation__price
+										p.original-deal 18.200.000
+										p 20.000.000
+									.infomation__title Bộ quà tặng Apple Watch
+									.infomation__desc
+										p Món quà tuyệt vời dành cho người sành cà phê. Hạt cà phê được Revo cẩn trọng chọn lựa, rang xay theo công nghệ và bí quyết học hỏi từ những nghệ nhân nổi tiếng, cùng với tình yêu, sự đam mê của người làm cà phê… tạo ra những tách cà phê tinh khiết chỉ dành riêng cho bạn.
+									// TRUYỀN NGÀY KẾT THÚC SỰ KIỆN VÀO ATTR "date-over"
+									.countdown-time(date-over="11/29/2020 23:59:00")
+										.block
+											h4 03
+											span ngày
+										.block
+											h4#hours 24
+											span giờ
+										.block
+											h4#minutes 60
+											span phút
+										.block
+											h4#seconds 55
+											span giây
+									// NẾU SỰ KIỆN ĐÃ KẾT THÚC THÌ BLOCK NÀY SẼ HIỆN LÊN VÀ BLOCK ĐẾM NGƯỢC SẼ ẨN ĐI
+									.countdown-over.hidden SỰ KIỆN ĐÃ KẾT THÚC

@@ -1,0 +1,40 @@
+.hamburgerIcon {
+	position: relative;
+	width: 18px;
+	height: 12px;
+	span {
+		position: absolute;
+		height: 2px;
+		border-radius: 2px;
+		background-color: #333333;
+		width: 100%;
+		transition: 0.3s all ease-in-out;
+		&:nth-child(1) {
+			top: 0px;
+		}
+		&:nth-child(2) {
+			top: 5px;
+		}
+		&:nth-child(3) {
+			top: 10px;
+		}
+	}
+	&.active {
+		span {
+			&:nth-child(1) {
+				transform: translateY(-50%) rotate(-45deg);
+			}
+			&:nth-child(2) {
+				transform: translateX(-35px);
+				background: transparent;
+			}
+			&:nth-child(3) {
+				transform: translateY(-50%) rotate(45deg);
+			}
+			&:nth-child(1),
+			&:nth-child(3) {
+				top: 50%;
+			}
+		}
+	}
+}

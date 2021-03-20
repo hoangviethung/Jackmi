@@ -1,0 +1,284 @@
+._checkbox-custom {
+	cursor: pointer;
+	position: relative;
+	height: 20px;
+	width: 20px;
+
+	input {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		appearance: none;
+		border-radius: 5px;
+		outline: none;
+		transition-duration: 0.3s;
+		background: #efefef;
+		&:active {
+			transform: scale(1.05);
+			border-radius: 30px;
+		}
+
+		&:after {
+			content: '\2713';
+			position: absolute;
+			width: 50%;
+			height: 50%;
+			transform: translate(-50%, -50%);
+			top: 40%;
+			left: 50%;
+			pointer-events: none;
+			opacity: 0;
+			color: map-get($color, trang);
+			transition: 0.3s all ease-in-out;
+		}
+	}
+
+	input:checked {
+		background: #6eb2fb;
+		&:after {
+			opacity: 1;
+		}
+	}
+}
+
+.form-group {
+	&.style-2 {
+		label {
+			font-size: 1.6rem;
+			color: #908d8d;
+		}
+		.input-control {
+			border-top: 0;
+			border-left: 0;
+			border-right: 0;
+			border-radius: 0;
+			padding-left: 0;
+			padding-right: 0;
+			font-size: 2rem;
+		}
+	}
+	label {
+		color: #000000;
+		font-size: 1.8rem;
+		margin-bottom: 5px;
+	}
+}
+
+.input-control {
+	height: 35px;
+	padding: 7px 10px;
+	width: 100%;
+	border: 1px solid #7b7b7b;
+	border-radius: 5px;
+	color: #000000;
+	&::placeholder {
+		color: #7b7b7b;
+	}
+	&--bg-gray {
+		background: #fafafa;
+	}
+}
+
+.textarea-control {
+	width: 100%;
+	resize: none;
+	padding: 17px;
+	color: #000000;
+	border: 1px solid #dddddd;
+	height: 190px;
+	&::placeholder {
+		color: #7b7b7b;
+	}
+	&--bg-gray {
+		background: #fafafa;
+	}
+}
+
+.custom__input--radio {
+	+ .custom__input--radio {
+		margin-top: 15px;
+	}
+	label {
+		cursor: pointer;
+		font-size: 1.4rem;
+	}
+	span {
+		display: inline-flex;
+		align-items: center;
+		min-height: 22px;
+		height: 100%;
+		user-select: none;
+		padding-left: 25px;
+		position: relative;
+		user-select: none;
+		&[data-fancybox] {
+			&:before {
+				content: none;
+			}
+		}
+		&:before {
+			content: '';
+			position: absolute;
+			width: 18px;
+			height: 18px;
+			border-radius: 50%;
+			border: 2px solid black;
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%);
+		}
+	}
+	input {
+		display: none;
+		&:checked ~ span:before {
+			box-shadow: inset 0px 0px 0px 2px white;
+			background-color: black;
+			transition: 0.3s all ease-in-out;
+		}
+	}
+}
+
+.custom__input--checkbox {
+	cursor: pointer;
+	span {
+		display: inline-flex;
+		align-items: center;
+		min-height: 22px;
+		height: 100%;
+		user-select: none;
+		padding-left: 25px;
+		position: relative;
+		user-select: none;
+		&:before {
+			content: '';
+			position: absolute;
+			width: 16px;
+			height: 16px;
+			border: 1px solid rgba(black, 0.3);
+			top: 0.3rem;
+			left: 0;
+			transition: 0.3s all ease-in-out;
+		}
+	}
+	input {
+		display: none;
+		&:checked ~ span:before {
+			box-shadow: inset 0px 0px 0px 2px white;
+			background-color: map-get($color, brand);
+		}
+	}
+}
+
+.form-password {
+	position: relative;
+	.view-password {
+		cursor: pointer;
+		width: 24px;
+		height: 17px;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		background-image: url('../resources/icons/view-password.svg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 24px;
+		position: absolute;
+		top: 39px;
+		right: 0;
+		transition: all 0.3s ease-in-out;
+		&:before {
+			transition: all 0.3s ease-in-out;
+			content: '';
+			width: 25px;
+			height: 2px;
+			background-color: map-get($color, den);
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%) rotateZ(-45deg);
+			transform-origin: 50% 50%;
+			opacity: 0;
+		}
+		&.show {
+			&:before {
+				opacity: 1;
+			}
+		}
+		@media (max-width: 575.98px) {
+			right: 10px;
+		}
+	}
+	.view-password {
+		opacity: 0;
+		visibility: hidden;
+	}
+	&:hover,
+	&:focus {
+		.view-password {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+}
+
+.comments__form {
+	margin-top: 18px;
+	.input-control {
+		border: 1px solid #e1e1e1;
+	}
+	.form-group {
+		margin-bottom: 18px;
+	}
+	textarea.input-control {
+		height: 185px;
+	}
+	.form-button {
+		display: flex;
+		align-items: center;
+		.tutorial__link {
+			color: map-get($color, brand);
+			font-size: 2.4rem;
+			@media (max-width: 575.98px) {
+				font-size: 1.8rem;
+			}
+		}
+		.btn-submit {
+			color: map-get($color, trang);
+			height: 54px;
+			background: map-get($color, brand);
+			padding: 0 34px;
+			border-radius: 25px;
+			margin-left: auto;
+			@media (max-width: 1024.98px) {
+				height: 34px;
+			}
+		}
+	}
+}
+
+.review-form {
+	.form-button {
+		text-align: right;
+		margin-top: 16px;
+	}
+	.rating-input {
+		.star {
+			@media (min-width: 1025px) {
+				svg {
+					path {
+						transition: 0.3s all ease;
+					}
+				}
+				&:hover {
+					svg {
+						path {
+							fill: #ffc94f;
+						}
+					}
+				}
+			}
+		}
+	}
+}

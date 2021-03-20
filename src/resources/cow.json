@@ -1,0 +1,40 @@
+{
+	"frames": {
+		"cow-1.png": {
+			"frame": { "x": 0, "y": 0, "w": 400, "h": 243 },
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 400, "h": 243 },
+			"sourceSize": { "w": 400, "h": 243 },
+			"anchor": { "x": 0.5, "y": 0.5 }
+		},
+		"cow-2.png": {
+			"frame": { "x": 400, "y": 0, "w": 400, "h": 243 },
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 400, "h": 243 },
+			"sourceSize": { "w": 400, "h": 243 },
+			"anchor": { "x": 0.5, "y": 0.5 }
+		},
+		"cow-3.png": {
+			"frame": { "x": 800, "y": 0, "w": 400, "h": 243 },
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 400, "h": 243 },
+			"sourceSize": { "w": 400, "h": 243 },
+			"anchor": { "x": 0.5, "y": 0.5 }
+		}
+	},
+	"animations": {
+		"stand": ["cow-1", "cow-2", "cow-3"]
+	},
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"image": "cow.png",
+		"format": "RGBA8888",
+		"size": { "w": 1200, "h": 243 },
+		"scale": "1",
+		"smartupdate": "$TexturePacker:SmartUpdate:d52432188f434231bb4eb383962d0051:aa2ef4142947daa5f1254b0dfdcebaa8:efd1bc123b77c1ad9549f2d5fe8ca135$"
+	}
+}

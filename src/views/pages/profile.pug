@@ -1,0 +1,84 @@
+extends ../layouts/_layout
+
+block var
+	- let title = "Profile"
+block banner,breadcrumb
+	include ../layouts/_breadcrumb
+block main
+	.cartAnnounce
+		.container
+			.cartAnnounce__wrapper.d-flex.align-center
+				span.mdi.mdi-alert-circle-outline 
+				p Miễn phí giao hàng cho đơn hàng tối thiểu 1 tỉ đồng
+	section.Profile
+		.container
+			.row
+				.col-left
+					include ../components/profile/aside
+				.col-right
+					section.profile-table-wrapper
+						form.profile__form
+							.profile__title.d-flex.align-center.flex-wrap
+								h2.text-uppercase Thông tin tài khoản
+							.form-group.style-2.form-group--avatar
+								label Ảnh đại diện
+								.form-group--preview
+									img#avatar-preview
+								input#imgInput(type="file" name="Avatar")
+							.form-group.style-2
+								label Họ và tên
+								input.input-control(name="Name" placeholder="Name" value='FlatCloud Company')
+							.form-group.style-2
+								label Tên đăng nhập
+								input.input-control(name="Username" placeholder="Name" value='abcd5321' disabled)
+							.form-group.style-2
+								label Số diện thoại
+								input.input-control(name="Phone" placeholder="Phone" disabled value="09000000000")
+							.form-group.style-2
+								label Email
+								input.input-control(name="Address" placeholder="FlatCloud.Company@gmail.com" disabled)
+							.form-group.style-2.form-group--date-of-birth
+								label Ngày sinh
+								.custom__input--radio
+									select.input-control(name="Date" placeholder="Date")
+										option Ngày
+										-for(i = 1;i<32;i++)
+											option= i
+								.custom__input--radio
+									select.input-control(name="Month" placeholder="Month")
+										option Tháng
+										-for(i = 1;i<13;i++)
+											option= 'Tháng'+ i
+								.custom__input--radio
+									select.input-control(name="Year" placeholder="Year")
+										option Năm
+										-for(i = 1950;i<2020;i++)
+											option= i
+							.form-group.style-2.form-group--gender
+								label Giới tính: 
+								.custom__input--radio
+									label
+										input#method-1(type="radio" name="Gender")
+										span Nam
+								.custom__input--radio
+									label
+										input#method-1(type="radio" name="Gender")
+										span Nữ
+							//- .form-group.style-2
+							//- 	label Quận/huyện
+							//- 	select.input-control(name="District" placeholder="District")
+							//- 		option Chọn Quận/huyện
+							//- 		option Tp. Hồ Chí Minh
+							//- 		option Tp. Hồ Chí Minh
+							//- 		option Tp. Hồ Chí Minh
+							//- 		option Tp. Hồ Chí Minh
+							//- .form-group.style-2
+							//- 	label Phường/xã
+							//- 	select.input-control(name="Ward" placeholder="Ward")
+							//- 		option Chọn Phường/xã
+							//- 		option Tp. Hồ Chí Minh
+							//- 		option Tp. Hồ Chí Minh
+							//- 		option Tp. Hồ Chí Minh
+							//- 		option Tp. Hồ Chí Minh
+							.form-group.form-button
+								button.btn.btn-submit CẬP NHẬT

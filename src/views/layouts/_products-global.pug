@@ -1,0 +1,22 @@
+section.products-global
+	.container
+		.products-global-wrapper
+			.products-global-head
+				h2.block-title Phụ kiện Apple Watch
+				.button-show-categories-mobile.mobile
+					img(src="./resources/icons/dots.png", alt="dots")
+				.categories-filter
+					ul.categories
+						li.item.active
+							a(href="#") Dây đeo
+						li.item
+							a(href="#") Kính dán
+						li.item
+							a(href="#") Khác
+						li.item
+							a(href="#") Khác
+			.products-global-body
+				.row
+					-for(j=0;j<4;j++)
+						.col-lg-3.col-6
+							include _product

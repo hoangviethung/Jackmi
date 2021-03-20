@@ -1,0 +1,147 @@
+.cartAnnounce
+	.container
+		.cartAnnounce__wrapper.d-flex.align-center
+			span.mdi.mdi-alert-circle-outline 
+			p Miễn phí giao hàng cho đơn hàng tối thiểu 1 tỉ đồng
+.cartList
+	.container
+		.row
+			.col-xl-9.pb-70
+				.cartList__wrapper
+					.cartList__title.d-flex.align-center
+						h2.fs-24.text-uppercase Giỏ hàng
+						span (4 sản phẩm)
+					.cartList__products
+						table
+							thead.desktop
+								tr
+									th Sản phẩm
+									th Thuộc tính
+									th Số lượng
+									th Thành tiền
+							tbody
+								tr
+									td
+										.product__info.d-flex
+											.product__img.flex-center.flex-wrap
+												img.lazyload.blur-up.object-cover(data-src="./resources/images/products/p-1.png")
+											.product__content
+												h4 
+													a(href="#") Tên đầy đủ của sản phẩm này là ....
+												p Nhập khẩu chính hãng bởi Nestlé Việt Nam dài đến 2 hàng
+												.product__remove
+													span Xóa
+									td
+										p.product__property XXL
+										p.product__property Màu xanh
+									td
+										.product__quantity.d-flex.justify-center
+											.minus -
+											input.quantity(type="text" value="1" min="1" max="5")
+											.plus +
+									td
+										del.product__price--old 15.000.000 đ
+										p.product__price--new.fw-700 20.000.000 đ
+								tr
+									td
+										.product__info.d-flex
+											.product__img.flex-center.flex-wrap
+												img.lazyload.blur-up.object-cover(data-src="./resources/images/products/p-1.png")
+											.product__content
+												h4 
+													a(href="#") Tên đầy đủ của sản phẩm này là ....
+												p Nhập khẩu chính hãng bởi Nestlé Việt Nam dài đến 2 hàng
+												.product__remove
+													span Xóa
+									td
+										p.product__property XXL
+										p.product__property Màu xanh
+									td
+										.product__quantity.justify-center
+											.minus -
+											input.quantity(type="text" value="1" min="1" max="5")
+											.plus +
+									td
+										del.product__price--old 15.000.000 đ
+										p.product__price--new.fw-700 20.000.000 đ
+								tr
+									td
+										.product__info.d-flex
+											.product__img.flex-center.flex-wrap
+												img.lazyload.blur-up.object-cover(data-src="./resources/images/products/p-1.png")
+											.product__content
+												h4 
+													a(href="#") Tên đầy đủ của sản phẩm này là ....
+												p Nhập khẩu chính hãng bởi Nestlé Việt Nam dài đến 2 hàng
+												.product__remove
+													span Xóa
+									td
+										p.product__property XXL
+										p.product__property Màu xanh
+									td
+										.product__quantity.d-flex.justify-center
+											.minus -
+											input.quantity(type="text" value="1" min="1" max="5")
+											.plus +
+									td
+										del.product__price--old 15.000.000 đ
+										p.product__price--new.fw-700 20.000.000 đ
+								tr
+									td
+										.product__info.d-flex
+											.product__img.flex-center.flex-wrap
+												img.lazyload.blur-up.object-cover(data-src="./resources/images/products/p-1.png")
+											.product__content
+												h4 
+													a(href="#") Tên đầy đủ của sản phẩm này là ....
+												p Nhập khẩu chính hãng bởi Nestlé Việt Nam dài đến 2 hàng
+												.product__remove
+													span Xóa
+									td
+										p.product__property XXL
+										p.product__property Màu xanh
+									td
+										.product__quantity.d-flex.justify-center
+											.minus -
+											input.quantity(type="text" value="1" min="1" max="5")
+											.plus +
+									td
+										del.product__price--old 15.000.000 đ
+										p.product__price--new.fw-700 20.000.000 đ
+				include ../../layouts/_pagination
+			.col-xl-3.pb-70
+				.cartSummary
+					.cartSummary__block
+						p Số lượng sản phẩm
+						p 5
+					.cartSummary__block
+						p Tiền hàng
+						p 989.989.980 VNĐ
+					//- .cartSummary__block
+					//- 	p Phí giao hàng
+					//- 	p 989.989.980 VNĐ
+					.cartSummary__block.cartSummary__block--total
+						p Tổng cộng
+						p.cartSummary__total 
+							span 888.888.000 đ
+				.cartSummary__buttons
+					.btn.btn-primary.text-uppercase Tiến hành đặt hàng
+				.cartSummary__policies-rules
+					p Chính sách & điều khoản
+					.cartSummary__policiesRulesList
+						.cartSummary__policiesRulesItem 
+							a(href="#") 
+								img.svg(src="./resources/icons/truck.svg")
+								span Chính sách vận chuyển
+						.cartSummary__policiesRulesItem 
+							a(href="#") 
+								img.svg(src="./resources/icons/guard.svg")
+								span Quy định đổi trả hàng
+						.cartSummary__policiesRulesItem 
+							a(href="#") 
+								img.svg(src="./resources/icons/guarantee.svg")
+								span Điều kiện bảo hành
+						.cartSummary__policiesRulesItem 
+							a(href="tel:0987654321") 
+								img.svg(src="./resources/icons/phone-2.svg")
+								span Đường dây hỗ trợ 

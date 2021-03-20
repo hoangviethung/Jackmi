@@ -1,0 +1,55 @@
+section.Contact
+	.container
+		.contact__map
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4234628704107!2d106.68789831528392!3d10.778843262095345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f30762ea12d%3A0x90c588d4c8556d60!2zMjA4IE5ndXnhu4VuIMSQw6xuaCBDaGnhu4N1LCBQaMaw4budbmcgNiwgUXXhuq1uIDMsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1601702707806!5m2!1svi!2s" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+	.container
+		.bg-section
+			.contact__wrapper
+				.row
+					.col-md-6
+						.contact__informations
+							.contact__title Thông tin liên lạc
+							.informations
+								a(href="tel:024-7300-1828").informations__item
+									.icon
+										img.lazyload.blur-up(src="./resources/icons/contact-phone.svg", alt="PHONE")
+									.text 024-7300-1828
+								a(href="tel:024-7300-3828").informations__item
+									.icon
+										img.lazyload.blur-up(src="./resources/icons/contact-phone.svg", alt="PHONE")
+									.text 024-7300-3828
+								a(href="mailto:hotro@jackmi.vn").informations__item
+									.icon
+										img.lazyload.blur-up(src="./resources/icons/contact-email.svg", alt="EMAIL")
+									.text hotro@jackmi.vn
+						.contact__informations
+							.contact__title Địa chỉ văn phòng
+							.informations
+								.informations__item
+									.text.fw-700 Chi Nhánh Hồ Chí Minh
+								.informations__item
+									.text Công ty TNHH Công nghệ Logivan Việt Nam
+								.informations__item
+									.text 208 Nguyễn Đình Chiểu, Phường 6, Quận 3, Thành Phố Hồ Chí Minh
+								a(href="#").informations__item
+									.icon
+										img.lazyload.blur-up(src="./resources/icons/contact-address.svg", alt="ADDRESS")
+									.text Hướng dẫn trên bản đồ
+					.col-md-6
+						.contact__title Liên hệ với chúng tôi
+						.contact__form
+							form(action="#")
+								.form-group
+									label Họ và tên
+									input.input-control(type="text" placeholder="Nguyễn Văn A")
+								.form-group
+									label Điện thoại
+									input.input-control(type="text" placeholder="Nguyễn Văn A")
+								.form-group
+									label Email của bạn
+									input.input-control(type="text" placeholder="Nguyễn Văn A")
+								.form-group
+									label Lời nhắn
+									textarea.input-control(placeholder="Lời nhắn của bạn muốn gửi đến chúng tôi")
+								.form-group.form-button
+									button.btn.btn-submit HOÀN TẤT

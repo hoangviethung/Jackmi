@@ -1,0 +1,10 @@
+extends ../layouts/_layout
+
+block var
+	- let title = "News"
+block banner,breadcrumb
+	include ../layouts/_breadcrumb
+block main
+	include ../components/news/n-1
+	//- SLIDER ĐỐI TÁC
+	include ../layouts/_partners

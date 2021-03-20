@@ -1,0 +1,60 @@
+extends ../layouts/_layout
+
+block var
+	- let title = "Wishlist"
+block banner,breadcrumb
+	include ../layouts/_breadcrumb
+block main
+	.cartAnnounce
+		.container
+			.cartAnnounce__wrapper.d-flex.align-center
+				span.mdi.mdi-alert-circle-outline 
+				p Miễn phí giao hàng cho đơn hàng tối thiểu 1 tỉ đồng
+	section.Profile
+		.container
+			.row
+				.col-left
+					include ../components/profile/aside
+				.col-right
+					section.WishlistWrapper
+						.profile-table-wrapper
+							.profile__title.d-flex.align-center.flex-wrap
+								h2.text-uppercase DANH SÁCH YÊU THÍCH
+							table.product-table.profile-table.has-button
+								thead
+									tr
+										th Sản phẩm
+										th Thuộc tính
+										th Giá
+										th Thêm vào giỏ
+								tbody
+									-for(i=0;i<5;i++)
+										tr.item-table
+											td
+												.item-product
+													.img
+														img(src="./resources/images/products/thumbnail.png", alt="product")
+													.infomation
+														h4.lcl.lcl-1 Tên đầy đủ của sản phẩm này là ....
+														p.lcl.lcl-2 Nhập khẩu chính hãng bởi Nestlé Việt Nam ...dài đến 2 hàng
+														// SHOW IN MOBILE
+														.properties
+															p XXL
+														// SHOW IN MOBILE
+														.price
+															p.original-deal 20.000.000
+															p 18.200.000
+											// NONE IN MOBILE
+											td
+												.properties
+													p XXL
+											// NONE IN MOBILE
+											td
+												.price
+													p.original-deal 20.000.000
+													p 18.200.000
+											td
+												.table-buttons
+													.btn.btn-remove-cart Xóa
+													.btn.btn-add-cart Thêm
+						include ../layouts/_pagination

@@ -1,0 +1,323 @@
+header
+	.header-contact
+		.container
+			.row.no-gutters.align-center
+				.header-hotline
+					a(href="tel:19009373").hotline__link
+						.icon
+							img(src="./resources/icons/header-phone.png", alt="")
+						.text 1900 9373
+				.social-header
+					ul.list-item
+						li.item
+							a(href="#").social-link
+								img(src="./resources/icons/header-facebook.png", alt="facebook")
+						li.item
+							a(href="#").social-link
+								img(src="./resources/icons/header-instagram.png", alt="instagram")
+						li.item
+							a(href="#").social-link
+								img(src="./resources/icons/header-youtube.png", alt="youtube")
+	.header-middle
+		.container
+			.row.no-gutters.align-center
+				// SHOW IN MOBILE
+				.hamburgerIcon.mobile
+					span
+					span
+					span
+				a(href="index.html").header-logo
+					img(src="./resources/images/logo-header.png", alt="JACKMI")
+				// SHOW IN MOBILE
+				.searchIcon.mobile
+					img(src="./resources/icons/search-icon-mobile.png", alt="search")
+				.header-search-wrapper
+					form(action="search.html").search__form
+						input.search__input(type="search" placeholder="Nhập từ khóa bạn cần tìm vào đây...")
+						button.btn.btn-submit-search
+								.icon
+									img(src="./resources/icons/search.png", alt="search")
+				.header-user-information
+					// HAS CLASS "logged" All ICON WILL REMOVE
+					.user-information.logged
+						// INFOMATION USER WHEN LOOGED
+						a(href="profile.html").account-user-information
+							.account-user-information-wrapper
+								.account__img.overflow-hidden
+									img.object-cover.fullsize(src="./resources/images/account.png", alt="account")
+								.account__infomation
+									.account__name FlatCloud Company
+									.account__email hoang@flatcloud.company
+						// ICON USER
+						a(href="profile.html").icon-user-information
+							img(src="./resources/icons/header-account.png", alt="account")
+							span.text-mobile Thông tin
+						// SHOW IN MOBILE - ICON LOGOUT
+						a(href="index.html").icon-user-information
+							img(src="./resources/icons/header-logout.png", alt="logout")
+							span.text-mobile Đăng xuất
+						.toggler-user-information-wrapper
+							.toggler-container
+								.title-toggler
+									span User Name
+								ul.list-link
+									li.item-link
+										a(href="wishlist.html") Danh sách yêu thích
+									li.item-link
+										a(href="profile.html") Thông tin tài khoản
+									li.item-link
+										a(href="#") Đổi mật khẩu
+									li.item-link
+										a(href="index.html") Đăng xuất
+									li.item-link
+										a(data-fancybox="signup" data-src="#popup-signup" popup-target="signup") Đăng ký
+									li.item-link
+										a(data-fancybox="signin" data-src="#popup-signin" popup-target="signin") Đăng nhập
+					.user-information
+						a(href="wishlist.html").icon-user-information
+							span.fal.fa-heart
+							span.user-information__number 1
+					.user-information.flying-cart
+						a(href="cart.html").icon-user-information.cart-icon
+							span.fal.fa-shopping-cart
+							span.user-information__number 22
+						.cart-wrapper
+							.cart-header
+								p Có 4 sản phẩm trong giỏ hàng
+							ul.cart-body
+								li.cart-item
+									.cart-item-img
+										img(src="./resources/images/products/products-homepage-01.jpg", alt="")
+									.cart-item-info
+										h4.lcl.lcl-1 
+											a(href="product-detail.html") Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+										p.lcl.lcl-1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, sed magni, quia laudantium voluptate quis incidunt delectus voluptas accusantium eligendi voluptates odit ut ex omnis molestiae illo blanditiis veniam autem.
+									.cart-item-price
+										p
+											b 999.888đ x 3
+										span.cart-item-remove Xóa
+								li.cart-item
+									.cart-item-img
+										img(src="./resources/images/products/products-homepage-01.jpg", alt="")
+									.cart-item-info
+										h4.lcl.lcl-1 
+											a(href="product-detail.html") Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+										p.lcl.lcl-1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, sed magni, quia laudantium voluptate quis incidunt delectus voluptas accusantium eligendi voluptates odit ut ex omnis molestiae illo blanditiis veniam autem.
+									.cart-item-price
+										p
+											b 999.888đ x 3
+										span.cart-item-remove Xóa
+								li.cart-item
+									.cart-item-img
+										img(src="./resources/images/products/products-homepage-01.jpg", alt="")
+									.cart-item-info
+										h4.lcl.lcl-1 
+											a(href="product-detail.html") Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+										p.lcl.lcl-1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, sed magni, quia laudantium voluptate quis incidunt delectus voluptas accusantium eligendi voluptates odit ut ex omnis molestiae illo blanditiis veniam autem.
+									.cart-item-price
+										p
+											b 999.888đ x 3
+										span.cart-item-remove Xóa
+								li.cart-item
+									.cart-item-img
+										img(src="./resources/images/products/products-homepage-01.jpg", alt="")
+									.cart-item-info
+										h4.lcl.lcl-1 
+											a(href="product-detail.html") Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+										p.lcl.lcl-1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, sed magni, quia laudantium voluptate quis incidunt delectus voluptas accusantium eligendi voluptates odit ut ex omnis molestiae illo blanditiis veniam autem.
+									.cart-item-price
+										p
+											b 999.888đ x 3
+										span.cart-item-remove Xóa
+								li.cart-item
+									.cart-item-img
+										img(src="./resources/images/products/products-homepage-01.jpg", alt="")
+									.cart-item-info
+										h4.lcl.lcl-1 
+											a(href="product-detail.html") Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+										p.lcl.lcl-1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, sed magni, quia laudantium voluptate quis incidunt delectus voluptas accusantium eligendi voluptates odit ut ex omnis molestiae illo blanditiis veniam autem.
+									.cart-item-price
+										p
+											b 999.888đ x 3
+										span.cart-item-remove Xóa
+								li.cart-item
+									.cart-item-img
+										img(src="./resources/images/products/products-homepage-01.jpg", alt="")
+									.cart-item-info
+										h4.lcl.lcl-1 
+											a(href="product-detail.html") Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+										p.lcl.lcl-1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, sed magni, quia laudantium voluptate quis incidunt delectus voluptas accusantium eligendi voluptates odit ut ex omnis molestiae illo blanditiis veniam autem.
+									.cart-item-price
+										p
+											b 999.888đ x 3
+										span.cart-item-remove Xóa
+								li.cart-item
+									.cart-item-img
+										img(src="./resources/images/products/products-homepage-01.jpg", alt="")
+									.cart-item-info
+										h4.lcl.lcl-1 
+											a(href="product-detail.html") Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+										p.lcl.lcl-1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, sed magni, quia laudantium voluptate quis incidunt delectus voluptas accusantium eligendi voluptates odit ut ex omnis molestiae illo blanditiis veniam autem.
+									.cart-item-price
+										p
+											b 999.888đ x 3
+										span.cart-item-remove Xóa
+								li.cart-item
+									.cart-item-img
+										img(src="./resources/images/products/products-homepage-01.jpg", alt="")
+									.cart-item-info
+										h4.lcl.lcl-1 
+											a(href="product-detail.html") Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+										p.lcl.lcl-1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, sed magni, quia laudantium voluptate quis incidunt delectus voluptas accusantium eligendi voluptates odit ut ex omnis molestiae illo blanditiis veniam autem.
+									.cart-item-price
+										p
+											b 999.888đ x 3
+										span.cart-item-remove Xóa
+							.cart-footer
+								a.btn.btn-primary(href="/cart.html") Thanh toán
+
+	.header-navigation
+		.container
+			.navigation-wrapper
+				.navigation__list
+					.navigation__item
+						a.navigation__link(href="category.html") Danh mục
+						.nav-sub-menu-wrapper
+							.nav-sub-menu__item
+								ul.sub-menu__list
+									// BUTTON BACK
+									li.sub-menu__item.back.mobile
+										span Trở về
+									li.sub-menu__item
+										a.sub-menu__link(href="category.html") Dây đeo Apple Watch
+										.nav-sub-menu-wrapper
+											// BUTTON BACK
+											.nav-sub-menu__item.back.mobile
+												span Trở về
+											-for(i=0;i<7;i++)
+												.nav-sub-menu__item
+													.category-title Dây Silicon
+													ul.sub-menu__list
+														li.sub-menu__item
+															a.sub-menu__link(href="category.html") Dây Silicon thường
+														li.sub-menu__item
+															a.sub-menu__link(href="category.html") Dây Silicon Coteetci
+														li.sub-menu__item
+															a.sub-menu__link(href="category.html") Dây Silicon UAG
+											.category-banner
+												img(src="./resources/images/header/category-banner-01.jpg", alt="")
+									li.sub-menu__item
+										a.sub-menu__link(href="category.html") Phụ kiện Apple Watch
+										.nav-sub-menu-wrapper
+											// BUTTON BACK
+											.nav-sub-menu__item.back.mobile
+												span Trở về
+											-for(i=0;i<7;i++)
+												.nav-sub-menu__item
+													.category-title Dây Silicon
+													ul.sub-menu__list
+														li.sub-menu__item
+															a.sub-menu__link(href="category.html") Dây Silicon thường
+														li.sub-menu__item
+															a.sub-menu__link(href="category.html") Dây Silicon Coteetci
+														li.sub-menu__item
+															a.sub-menu__link(href="category.html") Dây Silicon UAG
+											.category-banner
+												img(src="./resources/images/header/category-banner-01.jpg", alt="")
+									li.sub-menu__item
+										a.sub-menu__link(href="category.html") Phụ kiện iPhone
+									li.sub-menu__item
+										a.sub-menu__link(href="category.html") Phụ kiện AirPods
+									li.sub-menu__item
+										a.sub-menu__link(href="category.html") Pin & Cáp sạc
+									li.sub-menu__item
+										a.sub-menu__link(href="category.html") Phụ kiện khác
+									li.sub-menu__item
+										a.sub-menu__link(href="category.html") Thanh lý hàng cũ
+									li.sub-menu__item
+										a.sub-menu__link(href="category.html") Menu cấp 1 khác...
+									li.sub-menu__item
+										a.sub-menu__link(href="category.html") Menu cấp 1 khác...
+									li.sub-menu__item
+										a.sub-menu__link(href="category.html") Menu cấp 1 khác...
+									li.sub-menu__item
+										a.sub-menu__link(href="category.html") Menu cấp 1 khác...
+					.navigation__item
+						a.navigation__link(href="index.html") Trang chủ
+					.navigation__item
+						a.navigation__link(href="about.html") Giới thiệu
+					.navigation__item
+						a.navigation__link(href="news.html") tin tức
+					.navigation__item
+						a.navigation__link(href="#") khuyến mãi
+					.navigation__item
+						a.navigation__link(href="contact.html") Liên hệ
+
+
+.d-none
+	#popup-signup.popup-signinup
+		.tab-container
+			.row.no-gutters
+				.tab-label.col-sm-6
+					h4 Đăng ký
+					p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis qui ipsa a in eveniet, repellendus quos iure voluptas soluta tempore sunt. Corporis beatae repellat rerum veniam sint quas molestias cumque.
+					p Bạn đã có tài khoản? 
+						a(data-fancybox data-src="#popup-signin") Click vào đây để đăng nhập
+				.tab-content.col-sm-6
+					form.form-signinup(action="")
+						.form-group
+							.icon
+								//- img.svg(data-src="./resources/icons/user.svg")
+							input.form-control(type="text" placeholder="Họ và tên")
+						.form-group
+							.icon
+								//- img.svg(data-src="./resources/icons/phone.svg")
+							input.form-control(type="text" placeholder="Số điện thoại")
+						.form-group
+							.icon
+								//- img.svg(data-src="./resources/icons/form-email.svg")
+							input.form-control(type="text" placeholder="Email của bạn")
+						.form-group.form-password
+							.icon
+								//- img.svg(data-src="./resources/icons/lock.svg")
+							input.form-control(type="text" placeholder="Đặt mật khẩu")
+							.view-password
+						.form-group.form-password
+							.icon
+								//- img.svg(data-src="./resources/icons/lock.svg")
+							input.form-control(type="text" placeholder="Nhập lại mật khẩu")
+							.view-password
+						.form-group.form-button
+							button.btn.btn-signinup.text-uppercase Khởi tạo tài khoản
+						//- .form-group.form-remember
+						//- 	label.custom__input--checkbox
+						//- 		input(type="checkbox", name="")
+						//- 		span Đồng ý nhận theo dõi những bản tin từ chúng tôi
+				
+	#popup-signin.popup-signinup
+		.tab-container
+			.row.no-gutters
+				.tab-label.col-sm-6
+					h4 Đăng nhập
+					p Đăng nhập để mua hàng và sử dụng những tiện ích mới nhất từ www.lixibox.com
+					p Bạn chưa có tài khoản
+						a(data-fancybox data-src="#popup-signup") Đăng ký
+				.tab-content.col-sm-6
+					form.form-signinup(action="")
+						.form-group
+							input.form-control(type="text" placeholder="Email của bạn")
+						.form-group.form-password
+							input.form-control(type="text" placeholder="Nhập mật khẩu")
+							.view-password
+						.form-group.form-button
+							button.btn.btn-signinup.text-uppercase Đăng nhập
+						.form-group.form-remember
+							label.custom__input--checkbox
+								input(type="checkbox", name="")
+								span Ghi nhớ mật khẩu
+							a(href="#") Quên mật khẩu
+	#signup-successful
+		.content
+			img.lazyload.blur-up(data-src="./resources/logo_2.svg")
+			p Chúc mừng bạn đã đăng ký thành công, vui lòng check email để kích hoạt tài khoản
+			a.btn.btn-signinup.text-uppercase(href="javascript:void(0)") Đóng

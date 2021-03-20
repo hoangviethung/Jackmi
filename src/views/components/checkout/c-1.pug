@@ -1,0 +1,223 @@
+.cartAnnounce
+	.container
+		.cartAnnounce__wrapper.d-flex.align-center
+			span.mdi.mdi-alert-circle-outline 
+			p Miễn phí giao hàng cho đơn hàng tối thiểu 1 tỉ đồng
+.checkout.cartList
+	form.container
+		.card.checkout__saveAddress
+			.card-header
+				h2.fs-24.text-uppercase Địa chỉ đã lưu
+				p.text-muted.mb-0 Chọn địa chỉ để giao hàng tới
+			.card-body
+				.row
+					.col-md-6
+						.card.border.mb-0.shadow-none
+							.card-body
+								.custom-control.custom-radio
+									input#radio-1.custom-control-input(type='radio' name='customRadio' checked='')
+									label.custom-control-label.font-weight-bold(for='radio-1') 3456 Hải Thượng Lãn Ông, P.13, Q.5, TP. Hồ Chí Minh
+								//- br
+								p.mb-0.font-weight-bold Tên khách hàng
+								//- p.mb-0.m-t-10 3456 Hải Thượng Lãn Ông, P.13, Q.5, TP. Hồ Chí Minh
+								p.mb-0 +84 987 654 321
+								p.mb-0
+									a.text-secondary(href='mailto:usermail@gmail.com' target='_top') usermail@gmail.com
+					.col-md-6
+						.card.border.mb-0.shadow-none
+							.card-body
+								.custom-control.custom-radio
+									input#radio-1.custom-control-input(type='radio' name='customRadio' checked='')
+									label.custom-control-label.font-weight-bold(for='radio-1') 3456 Hải Thượng Lãn Ông, P.13, Q.5, TP. Hồ Chí Minh
+								//- br
+								p.mb-0.font-weight-bold Tên khách hàng
+								//- p.mb-0.m-t-10 3456 Hải Thượng Lãn Ông, P.13, Q.5, TP. Hồ Chí Minh
+								p.mb-0 +84 987 654 321
+								p.mb-0
+									a.text-secondary(href='mailto:usermail@gmail.com' target='_top') usermail@gmail.com
+					.col-md-6
+						.card.border.mb-0.shadow-none
+							.card-body
+								.custom-control.custom-radio
+									input#radio-2.custom-control-input(type='radio' name='customRadio' checked='')
+									label.custom-control-label.font-weight-bold(for='radio-2') 3456 Hải Thượng Lãn Ông, P.13, Q.5, TP. Hồ Chí Minh
+								//- br
+								p.mb-0.font-weight-bold Tên khách hàng
+								//- p.mb-0.m-t-10 3456 Hải Thượng Lãn Ông, P.13, Q.5, TP. Hồ Chí Minh
+								p.mb-0 +84 987 654 321
+								p.mb-0
+									a.text-secondary(href='mailto:usermail@gmail.com' target='_top') usermail@gmail.com
+		.row
+			.col-xl-8.pb-70
+				.cartList__wrapper
+					.cartList__title.d-flex.align-center.flex-wrap
+						h2.fs-24.text-uppercase Địa chỉ khác 
+						span (nếu không dùng địa chỉ có sẵn)
+					.checkout__form.row
+						.form-group.style-2.col-md-6
+							label Họ và tên
+							input.input-control(name="Name" placeholder="Name")
+						.form-group.style-2.col-md-6
+							label Email
+							input.input-control(name="Email" placeholder="Email")
+						.form-group.style-2.col-md-6
+							label Số diện thoại
+							input.input-control(name="Phone" placeholder="Phone")
+						.form-group.style-2.col-md-6
+							label Địa chỉ
+							input.input-control(name="Address" placeholder="Address")
+						.form-group.style-2.col-md-6
+							label Tỉnh/Thành phố
+							select.input-control(name="City" placeholder="City")
+								option Chọn Tỉnh/Thành phố
+								option Tp. Hồ Chí Minh
+								option Tp. Hồ Chí Minh
+								option Tp. Hồ Chí Minh
+								option Tp. Hồ Chí Minh
+						.form-group.style-2.col-md-6
+							label Quận/huyện
+							select.input-control(name="District" placeholder="District")
+								option Chọn Quận/huyện
+								option Tp. Hồ Chí Minh
+								option Tp. Hồ Chí Minh
+								option Tp. Hồ Chí Minh
+								option Tp. Hồ Chí Minh
+						.form-group.style-2.col-md-6
+							label Phường/xã
+							select.input-control(name="Ward" placeholder="Ward")
+								option Chọn Phường/xã
+								option Tp. Hồ Chí Minh
+								option Tp. Hồ Chí Minh
+								option Tp. Hồ Chí Minh
+								option Tp. Hồ Chí Minh
+						.form-group.col-12
+							label.custom__input--checkbox
+								input(type='checkbox' name='')
+								span Lưu địa chỉ cho những lần sau
+
+			.col-xl-4.pb-70
+				.cartList__wrapper.checkout__detail
+					.checkout__table
+						h3 Chi tiết đơn hàng
+						table
+							thead
+								tr
+									th Sản phẩm
+									th Thành tiền
+							tbody
+								tr
+									td 
+										h4 Tên của sản phẩm này là
+										p Size: XXL
+										p Màu: hồng
+										p 2 x 149.99
+									td 100.000đ
+								tr
+									td 
+										h4 Tên của sản phẩm này là
+										p Size: XXL
+										p Màu: hồng
+										p 2 x 149.99
+									td 100.000đ
+								tr
+									td 
+										h4 Tên của sản phẩm này là
+										p Size: XXL
+										p Màu: hồng
+										p 2 x 149.99
+									td 100.000đ
+								tr
+									td 
+										h4 Tên của sản phẩm này là
+										p Size: XXL
+										p Màu: hồng
+										p 2 x 149.99
+									td 100.000đ
+					//- .checkout__voucher.form-group.d`
+					.cartSummary
+						.cartSummary__block
+							p Số lượng sản phẩm
+							p 5
+						.cartSummary__block
+							p Tiền hàng
+							p 989.989.980 VNĐ
+						.cartSummary__block
+							p Phí giao hàng
+							p 989.989.980 VNĐ
+						.cartSummary__block.cartSummary__block--total
+							p Tổng cộng
+							p.cartSummary__total 
+								span 888.888.000 đ
+					.checkout__method
+						h3 Phương thức thanh toán
+						.custom__input--radio
+							label
+								input#method-1(type="radio" name="Method")
+								span(for="#method-1") Thanh toán tiền mặt khi nhận hàng
+						.custom__input--radio
+							label
+								input#method-2(type="radio" name="Method")
+								span(for="#method-2") Thanh toán qua Vnpay ( Thẻ ATM & TK Ngân hàng, Thẻ thanh toán quốc tế, Ví điện tử ) 
+						.custom__input--radio
+							label
+								input#method-3(type="radio" name="Method")
+								span(for="#method-3") Thanh toán quan Momo ( Ví điện tử )
+						.custom__input--radio
+							label.font-italic(style="text-decoration:underline")
+								span(data-fancybox data-options='{"src" : "#popup-product-info", "type" : "inline", "opts":{ "touch": "false" }}') Thông tin số tài khoản của JACKMI
+					
+					.cartSummary__buttons.checkout__buttons
+						.btn.btn-primary.text-uppercase Tiến hành đặt hàng
+
+.d-none
+	#popup-product-info
+		.popup-product-info.espot-content
+			h1.popup-product-info-header GỬI, ĐỔI VÀ HOÀN TRẢ HÀNG
+			h2 Giao hàng
+			.delivery-methods
+				ul
+					li
+						h3.method Nhận hàng tại cửa hàng của Zara - MIỄN PHÍ
+						p Trong vòng 3-7 ngày làm việc tại cửa hàng mà quý khách đã chọn.
+					li
+						h3.method Giao hàng tận nhà:
+						ul.dashed-list
+							li
+								h3.subMethod
+									| Giao hàng tiêu chuẩn
+									span.hiddenChangePrice  - 99.000 VND
+									|                      / MIỄN PHÍ (Đơn hàng trên 
+									span 1.299.000 VND
+									| )
+								p
+									| Thời gian giao hàng ước tính sẽ dao động trong khoảng 3-7 ngày làm việc, tùy thuộc vào địa chỉ giao hàng.
+				p.endingTimesNote
+					em
+						| Các thời hạn giao hàng nêu trên có thể kéo dài hơn đối với các khu vực đảo và vùng sâu, vùng xa.
+				p
+					| Tại thời điểm xử lý đơn hàng, chúng tôi sẽ thông báo các hình thức giao hàng sẵn có, phí và thời điểm giao hàng.
+			h2 Đổi và hoàn trả hàng
+			.return-methods
+				p
+					| Thời hạn trả hàng MIỄN PHÍ cho đơn hàng quý khách đã mua tại trang web Zara.com là 30 ngày kể từ ngày quý khách nhận được email xác nhận giao hàng.
+				p
+					| Tính năng đổi hàng không khả dụng cho các đơn hàng mua trực tuyến. Tuy nhiên, bạn vẫn có thể trả lại đơn hàng của mình MIỄN PHÍ trong thời hạn hoàn trả hàng đã định và đặt một đơn hàng mới.
+				ul
+					li
+						h3 TẠI CỬA HÀNG CỦA ZARA
+						p
+							| Quý khách có thể trả lại hàng tại bất kỳ cửa hàng nào của Zara ở quốc gia/khu vực đã mua hàng miễn là cửa hàng đó có mảng sản phẩm đó – nam, nữ, trẻ em.
+					li
+						h3 TẠI NHÀ
+						p
+							| Quý khách có thể yêu cầu lấy hàng tại nhà bằng cách truy cập phần 
+							a.underline(href='/vn/vi/user/order') đơn hàng và trả lại hàng
+							| .
+				p
+					| Một số sản phẩm của chúng tôi có thể áp dụng điều kiện hoàn trả đặc biệt. Xem thêm thông tin tại mục 
+					a.underline(href='/vn/vi/help/special-conditions-h39.html') Đổi và hoàn trả hàng > Các điều kiện đặc biệt
+					| .
+				p
+					| Để biết thêm thông tin, vui lòng truy cập vào mục Chính sách Đổi và Hoàn trả hàng hoặc mục quyền chấm dứt hợp đồng tại 
+					a.underline._mkt-open-in-popup(href='https://static.zara.net/static//pdfs/VN/terms-and-conditions/terms-and-conditions-vi_VN-20200305.pdf' target='_blank') Điều khoản mua hàng
+					|  của chúng tôi

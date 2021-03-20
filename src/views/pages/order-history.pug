@@ -1,0 +1,49 @@
+extends ../layouts/_layout
+
+block var
+	- let title = "Order History"
+block banner,breadcrumb
+	include ../layouts/_breadcrumb
+block main
+	.cartAnnounce
+		.container
+			.cartAnnounce__wrapper.d-flex.align-center
+				span.mdi.mdi-alert-circle-outline 
+				p Miễn phí giao hàng cho đơn hàng tối thiểu 1 tỉ đồng
+	section.Profile
+		.container
+			.row
+				.col-left
+					include ../components/profile/aside
+				.col-right
+					section.WishlistWrapper
+						.profile-table-wrapper
+							.profile__title.d-flex.align-center.flex-wrap
+								h2.text-uppercase QUẢN LÝ ĐƠN HÀNG
+							table.order-history-table.profile-table
+								thead
+									tr
+										th Mã đơn
+										th Ngày mua
+										th Sản phẩm
+										th Tổng tiền
+										th Trạng thái đơn hàng
+								tbody
+									-for(i=0;i<5;i++)
+										tr.item-table
+											td
+												p.title-table Mã đơn
+												a.order__id(href="order-history-detail.html") 359498310
+											td
+												p.title-table Ngày mua:
+												p.order__date 37/14/2050
+											td
+												p.title-table Sản phẩm:
+												p.order__name Tên đầy đủ của sản phẩm này là ....
+											td
+												p.title-table Tổng tiền:
+												p.order__price 20.000.000đ
+											td
+												p.title-table Trạng thái đơn hàng:
+												p.order__status Giao hàng thành công
+						include ../layouts/_pagination

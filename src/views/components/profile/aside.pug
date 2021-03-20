@@ -1,0 +1,76 @@
+section.ProfileAside
+	.ProfileAside__header
+		.profile__avatar.overflow-hidden
+			img.lazyload.blur-up.objectfit-cover.fullsize(data-src="./resources/images/account-big.png", alt="AVATAR")
+		.profile__name
+			h4 FlatCloud Company
+			p.profile__email dinhbao@flatcloud.company
+		.profile__buttons
+			// ICON USER
+			a(href="profile.html").profile-user-information
+				img(src="./resources/icons/user-profile.png", alt="account")
+				span.text-mobile Thông tin
+			// SHOW IN MOBILE - ICON LOGOUT
+			a(href="index.html").profile-user-logout
+				img(src="./resources/icons/logout-profile.png", alt="LOGOUT")
+				span.text-mobile Đăng xuất
+	.ProfileAside__navigation
+		//- a(href="profile.html").profileNavigation__item.active
+		//- 	.icon
+		//- 		img(src="./resources/icons/bar-chart.svg", alt="bar-chart")
+		//- 		img(src="./resources/icons/bar-chart.png", alt="bar-chart")
+		//- 	.text
+		//- 		span.lcl.lcl-1 Thông tin tài khoản
+		a(href="change-password.html").profileNavigation__item
+			.icon
+				img(src="./resources/icons/bar-chart.svg", alt="bar-chart")
+				img(src="./resources/icons/bar-chart.png", alt="bar-chart")
+			.text
+				span.lcl.lcl-1 Đổi mật khẩu
+		a(href="order-history.html").profileNavigation__item
+			.icon
+				img(src="./resources/icons/archive.svg", alt="archive")
+				img(src="./resources/icons/archive.png", alt="archive")
+			.text
+				span.lcl.lcl-1 Quản lý đơn hàng
+		a(href="address.html").profileNavigation__item
+			.icon
+				img(src="./resources/icons/archive.svg", alt="archive")
+				img(src="./resources/icons/archive.png", alt="archive")
+			.text
+				span.lcl.lcl-1 Quản lý địa chỉ nhận hàng
+		a(href="wishlist.html").profileNavigation__item
+			.icon
+				img(src="./resources/icons/activity.svg", alt="archive")
+				img(src="./resources/icons/activity.png", alt="archive")
+			.text
+				span.lcl.lcl-1 Sản phẩm yêu thích
+		a(href="review.html").profileNavigation__item
+			.icon
+				img(src="./resources/icons/calendar.svg", alt="activity")
+				img(src="./resources/icons/calendar.png", alt="activity")
+			.text
+				span.lcl.lcl-1 Đánh giá của tôi
+		a(href="question.html").profileNavigation__item
+			.icon
+				img(src="./resources/icons/calendar.svg", alt="calendar")
+				img(src="./resources/icons/calendar.png", alt="calendar")
+			.text
+				span.lcl.lcl-1 Quản lỷ hỏi đáp
+		//- a(href="about.html").profileNavigation__item
+		//- 	.icon
+		//- 		img(src="./resources/icons/link.svg", alt="calendar")
+		//- 		img(src="./resources/icons/link.png", alt="calendar")
+		//- 	.text
+		//- 		span.lcl.lcl-1 Giới thiệu
+		//- a(href="setting.html").profileNavigation__item
+		//- 	.icon
+		//- 		img(src="./resources/icons/settings.svg", alt="link")
+		//- 		img(src="./resources/icons/settings.png", alt="link")
+		//- 	.text
+		//- 		span.lcl.lcl-1 Cài đặt
+	.ProfileAside__hotline
+		a(href="tel:0966869373").btn.btn-hotline
+			.icon
+				img(src="./resources/icons/phone-call.png", alt="phone-call")
+			.text Hỗ trợ trực tiếp

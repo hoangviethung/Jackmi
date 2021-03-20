@@ -1,0 +1,33 @@
+section.showcase-clients
+	.container
+		.row
+			.col-md-6
+				section.showcase-homepage
+					.block-title
+						h2 SHOWCASE
+					.showcase-clients-slider
+						.swiper-container
+							.swiper-wrapper
+								-for(i=0;i<4;i++)
+									.swiper-slide
+										.img.overflow-hidden 
+											img.object-cover.fullsize(src="./resources/images/products/showcase.jpg", alt="showcase")
+							.swiper-pagination
+						.slider-showcase-clients-homepage-buttons
+							.slider-showcase-clients-prev
+							.slider-showcase-clients-next
+			.col-md-6
+				section.client-homepage
+					.block-title
+						h2 KHÁCH HÀNG CỦA CHÚNG TÔI
+					.showcase-clients-slider
+						.swiper-container
+							.swiper-wrapper
+								-for(i=0;i<4;i++)
+									.swiper-slide
+										.img.overflow-hidden 
+											img.object-cover.fullsize(src="./resources/images/products/clients.jpg", alt="clients")
+							.swiper-pagination
+						.slider-showcase-clients-homepage-buttons
+							.slider-showcase-clients-prev
+							.slider-showcase-clients-next

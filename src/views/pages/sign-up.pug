@@ -1,0 +1,39 @@
+extends ../layouts/_layout
+
+block var
+	- let title = "Sign up"
+block banner,breadcrumb
+	include ../layouts/_breadcrumb
+block main
+	.account__sign-in-up.pd-70
+		.container
+			form.form-signinup(action="")
+				h2.text-center.text-uppercase Đăng ký 
+				.form-group
+					.icon
+						img.svg(data-src="./resources/icons/user.svg")
+					input.form-control(type="text" placeholder="Họ và tên")
+				.form-group
+					.icon
+						img.svg(data-src="./resources/icons/phone.svg")
+					input.form-control(type="text" placeholder="Số điện thoại")
+				.form-group
+					.icon
+						img.svg(data-src="./resources/icons/form-email.svg")
+					input.form-control(type="text" placeholder="Email của bạn")
+				.form-group.form-password
+					.icon
+						img.svg(data-src="./resources/icons/lock.svg")
+					input.form-control(type="password" placeholder="Đặt mật khẩu")
+					.view-password
+				.form-group.form-password
+					.icon
+						img.svg(data-src="./resources/icons/lock.svg")
+					input.form-control(type="password" placeholder="Nhập lại mật khẩu")
+					.view-password
+				.form-group.form-button
+					button.btn.btn-signinup.text-uppercase Khởi tạo tài khoản
+				.form-group.form-remember
+					label.custom__input--checkbox
+						input(type="checkbox", name="")
+						span Đồng ý nhận theo dõi những bản tin thật sự hữu ích từ chúng tôi

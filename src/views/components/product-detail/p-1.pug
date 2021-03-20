@@ -1,0 +1,154 @@
+.ProductDetailWrapper
+	// BLOCK SLIDER IMAGES PRODUCTS
+	section.SliderImagesProduct
+		.SliderImagesProductWrapper
+			.slider-thumbs-product-detail
+				.swiper-container
+					.swiper-wrapper
+						-for(i=1;i<7;i++)
+							.swiper-slide
+								img.object-cover.fullsize(src=`./resources/images/product-detail/${i}.png`, alt="product-detail")
+			.slider-product-detail
+				.swiper-container
+					.swiper-prev.swiper-button
+						span.lnr.lnr-chevron-left
+					.swiper-next.swiper-button
+						span.lnr.lnr-chevron-right
+					.swiper-wrapper
+						-for(j=1;j<7;j++)
+							.swiper-slide
+								img.object-cover.fullsize(src=`./resources/images/product-detail/${j}.png`, alt="product-detail")
+	// PRODUCT CONTENT
+	section.ProductContent
+		//- .product-info-group.clearfix
+		.product__status.product__status--top
+			// all attr color: "out-of-stock" - "pre-order" - stocking
+			p.new Hàng mới
+			p.best-seller Bán chạy
+			p.sale Giảm giá
+		h1.product__name.lcl.lcl-2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum consequatur odit aliquam nulla ratione voluptates commodi fugiat, illo dolorum, placeat sapiente quia repellendus maiores sequi eius amet, doloremque debitis quo.
+		// .product__desc
+			p Sản phẩm dinh dưỡng công thức Nestlé NAN OPTIPRO 4 900g với công thức từ Thụy Sĩ
+			p Sản xuất tại Nestlé Philippines
+			p Nhập khẩu chính hãng bởi Nestlé Việt Nam
+			p Sản phẩm dinh dưỡng công thức cho trẻ từ 2-6 tuổi
+		.rate-review
+			// TRUYỂN DATA SỐ SAO ĐÁN VÀO ATTR "DATA-RATE" ĐỂ FILL MÀU
+			.rating-input.rating-input--size-20px(data-rate="5")
+				-for(i=0;i<5;i++)
+					.star
+						img.svg(src="./resources/icons/rate.svg", alt="rate")
+			a.count-review(href="#") (Xem
+				span 45
+				| đánh giá) 
+			p.count-sold
+				span 1.8K
+				| Đã bán
+		.product__status.product__status--bottom
+			h4.title-item-content Tình trạng:
+			// all attr color: "out-of-stock" - "pre-order" - stocking
+			p(status="out-of-stock") Hết hàng
+			p(status="pre-order") Đặt trước
+			p(status="stocking") Còn hàng
+		.product__color.filter-select
+			h4.title-item-content Màu sắc: 
+				span.result
+			.items-checkbox-selector.list-color
+				label.item-color(style="--color:#6EB2FB")
+					.checkbox__item
+						input(type="checkbox" value="Màu A")
+				label.item-color(style="--color:#00D3CA")
+					.checkbox__item
+						input(type="checkbox" value="Màu B")
+				label.item-color(style="--color:#F62F5E")
+					.checkbox__item
+						input(type="checkbox" value="Màu C")
+				label.item-color(style="--color:#FE5C07")
+					.checkbox__item
+						input(type="checkbox" value="Màu D")
+				label.item-color(style="--color:#F8E71C")
+					.checkbox__item
+						input(type="checkbox" value="Màu E")
+				label.item-color(style="--color:#9013FE")
+					.checkbox__item
+						input(type="checkbox" value="Màu F")
+		.product__size.filter-select
+			h4.title-item-content Kích thước
+				a(href="#" data-fancybox data-src="#choose-size-guide") (Hướng dẫn chọn size):
+				span.result
+			.items-checkbox-selector.list-size
+				label.item-size
+					.checkbox__item
+						input(type="checkbox" value="XS")
+						h5.name-size XS
+				label.item-size
+					.checkbox__item
+						input(type="checkbox" value="S")
+						h5.name-size S
+				label.item-size
+					.checkbox__item
+						input(type="checkbox" value="M")
+						h5.name-size M
+				label.item-size
+					.checkbox__item
+						input(type="checkbox" value="L")
+						h5.name-size L
+				label.item-size
+					.checkbox__item
+						input(type="checkbox" value="XL")
+						h5.name-size XL
+		.product__price
+			p.original-deal 36.400.000
+				span đ
+			p 18.200.000
+				span đ
+		.product__buttons
+			h4.title-item-content Số lượng
+			.list-button
+				.item-button
+					.product__quantity
+						.minus -
+						input.quantity(type="text" value="1" min="1" max="5")
+						.plus +
+				.item-button
+					.btn.btn-primary.btn-normal
+						.icon
+							img(src="./resources/icons/cart.png", alt="cart")
+						span Chọn mua
+				.item-button
+					.btn.btn-primary.btn-normal
+						span Mua ngay
+				.item-button
+					.btn.btn-add-favorite
+	// MORE INFOMATION
+	section.MoreInfomation
+		ul.list-item
+			li.item
+				.icon
+					img.lazyload.blur-up(data-src="./resources/icons/phone-more-infomation.png", alt="phone")
+				.text
+					p Tư vấn mua hàng
+						span 1900 9373
+			li.item
+				.icon
+					img.lazyload.blur-up(data-src="./resources/icons/check-more-infomation.png", alt="phone")
+				.text
+					p Cam kết hàng chính hãng 100%
+			li.item
+				.icon
+					img.lazyload.blur-up(data-src="./resources/icons/save-more-infomation.png", alt="phone")
+				.text
+					p Freeship với đơn hàng trên 500.000đ hoặc chuyển khoản trước
+			li.item
+				.icon
+					img.lazyload.blur-up(data-src="./resources/icons/car-more-infomation.png", alt="phone")
+				.text
+					p Giao hàng siêu tốc 1H (áp dụng nội thành TP.HCM)
+			li.item
+				.icon
+					img.lazyload.blur-up(data-src="./resources/icons/setting-more-infomation.png", alt="phone")
+				.text
+					p Bảo hành trên toàn quốc
+.d-none
+	#choose-size-guide
+		p Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia saepe aliquam architecto iure impedit quod rem explicabo, eos tempora? Sunt voluptatibus repellendus quam nesciunt ex natus incidunt maxime, ad inventore!

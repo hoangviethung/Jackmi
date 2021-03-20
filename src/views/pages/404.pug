@@ -1,0 +1,16 @@
+extends ../layouts/_layout
+
+block var
+	- let title = "404 page"
+block banner,breadcrumb
+block main
+	section.page-404
+		.container.fullsize
+			.box-content
+				.logo
+					img(src="./resources/images/logo-header.png", alt="logo")
+				.content
+					h1 Opps! Page not found
+					p Sorry, the page you're looking for dosesn't exist. Click back go home.
+				.button
+					a(href="index.html").btn.btn-submit GO HOME

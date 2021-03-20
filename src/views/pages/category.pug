@@ -1,0 +1,9 @@
+extends ../layouts/_layout
+
+block var
+	- let title = "Category"
+block banner,breadcrumb
+	include ../layouts/_breadcrumb
+block main
+	include ../components/category/c-1
+	include ../layouts/_products-other

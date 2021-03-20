@@ -1,0 +1,80 @@
+.showcase-clients {
+	padding-top: 80px;
+	.block-title {
+		position: relative;
+		margin-bottom: 36px;
+		h2 {
+			display: inline-block;
+			position: relative;
+			font-size: 2.2rem;
+			background: #f4f4f4;
+			z-index: 10;
+			padding-right: 35px;
+			text-transform: uppercase;
+			@media (max-width: 767.98px) {
+				font-size: 1.6rem;
+				padding-right: 14px;
+			}
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			height: 1px;
+			width: 100%;
+			top: 50%;
+			left: 0;
+			background: map-get($color, hover);
+		}
+		@media (max-width: 767.98px) {
+			margin-bottom: 24px;
+		}
+	}
+	@media (max-width: 1024.98px) {
+		padding-top: 40px;
+	}
+	@media (max-width: 575.98px) {
+		padding-top: 22px;
+	}
+}
+
+.client-homepage {
+	@media (max-width: 575.98px) {
+		padding-top: 22px;
+	}
+}
+
+.showcase-clients-slider {
+	position: relative;
+	.img {
+		height: 470px;
+		@media (max-width: 1024.98px) {
+			height: 300px;
+		}
+	}
+	.swiper-pagination {
+		.swiper-pagination-bullet {
+			width: 12px;
+			height: 12px;
+			background: none;
+			border: 2px solid #7a7b79;
+		}
+		.swiper-pagination-bullet {
+			background: map-get($color, den);
+		}
+	}
+	.slider-showcase-clients-homepage-buttons {
+		display: flex;
+		flex-wrap: wrap;
+		position: absolute;
+		top: 0;
+		right: 10px;
+		z-index: 20;
+		border-radius: 10px;
+		overflow: hidden;
+		margin-top: -23px;
+		@media (max-width: 767.98px) {
+			border-radius: 4px;
+			margin-top: -10px;
+		}
+	}
+}

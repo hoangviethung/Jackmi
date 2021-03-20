@@ -1,0 +1,33 @@
+block var
+
+doctype html
+
+html(lang="en")
+	head
+		title #{title}
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0, user-scalable=no")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap")
+		link(rel="icon" href="./resources/favicons/favicon.ico" type="image/gif" sizes="16x16")
+		link(href="./styles/core.min.css" rel="stylesheet")
+	body
+		block loading
+		//- main content
+		block header
+			include _header.pug
+		block banner,breadcrumb
+		main
+			block main
+			#js-page-verify(class=bodyClass hidden)
+		block footer
+			include _footer.pug
+		#overlay
+			#button-close-header-mobile
+				img(src="./resources/icons/close-circle.png", alt="close")
+		//- end main content
+		//- #go-top
+		//- 	img.svg(src="./assets/icons/gotop.svg")
+		//- include scripts
+		block scripts
+		script(src="./scripts/core.min.js" defer)

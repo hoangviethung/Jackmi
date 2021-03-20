@@ -1,0 +1,13 @@
+extends ../layouts/_layout
+
+block var
+	- let title = "About"
+block banner,breadcrumb
+	include ../layouts/_breadcrumb
+	include ../layouts/_other-banner
+block main
+	include ../components/about/a-1
+	//- 2 SLIDER CUỐI TRANG
+	include ../layouts/_showcase-clients
+	//- SLIDER ĐỐI TÁC
+	include ../layouts/_partners

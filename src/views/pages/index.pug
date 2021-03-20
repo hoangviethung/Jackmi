@@ -1,0 +1,15 @@
+extends ../layouts/_layout
+
+block var
+	- let title = "Index"
+block banner,breadcrumb
+	include ../layouts/_home-banner
+block main
+	include ../components/index/i-1
+	include ../components/index/i-2
+	-for(i=0;i<4;i++)
+		include ../layouts/_products-global
+	//- 2 SLIDER CUỐI TRANG
+	include ../layouts/_showcase-clients
+	//- SLIDER ĐỐI TÁC
+	include ../layouts/_partners

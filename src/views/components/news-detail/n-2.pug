@@ -1,0 +1,84 @@
+section.news-detail
+	.container
+		.news-detail-wrapper
+			.content-detail-description
+				h3 Bình giữ nhiệt Staley Go - Chính Hãng, bảo hành 12 tháng
+				img(src="./resources/images/about/content-01.jpg", alt="content")
+				p
+					b Bình giữ nhiệt 
+					| Ngày nay đã trở nên khá phổ biến và thông dụng với tất cả chúng ta, Sự phát triển công nghệ, kỹ thuật tiên tiến đã phát triển rất nhiều biến thể như ly giữ nhiệt, bình thủy giữ nhiệt, cốc giữ nhiệt
+				p Chọn 
+					b mua bình giữ nhiệt nóng lạnh
+					| vừa tiện dụng vừa đáp ứng tất cả nhu cầu sử dụng, lại có khả năng giữ nhiệt tốt nhất năm 2020 này
+				p Cừng Vaithuhay đi đến hành trình đánh giá chiếc 
+					b bình giữ nhiệt Stanley Go
+					| , vì sao dám gọi đây là bình giữ nhiệt tốt nhất 2020
+				img(src="./resources/images/about/content-02.jpg", alt="content")
+				p
+					b Bình giữ nhiệt Stanley Go 
+					| này đủ 3 yếu tố
+				p Linh hoạt Sử dụng khi ở nhà, nơi làm việc, lúc chơi thể thao và sử dụng được cả khi với nhu cầu đi lại và di chuyển rất nhiều của bạn.
+				p Tiện lợi: Bạn mang theo đến văn phòng, trường học, đi dã ngoại hay thậm chí đi du lịch xa. Thiết kế thân thẳng đứng, kiểu dáng bình thon gọn và màu sắc đen trắng bắt mắt.
+				p Chất lượng: Bình chịu được chấn động khi sử dụng hoặc di chuyển, giữ nóng và giữ lạnh rất tuyệt vời.
+			.news-detail-socials
+				a(href="#" style="--color:#3B5998").btn.item-news-detail-socials
+					img(src="./resources/icons/facebook-white.svg", alt="facebook")
+				a(href="#" style="--color:#00ACEE").btn.item-news-detail-socials
+					img(src="./resources/icons/twitter-white.svg", alt="twitter")
+				a(href="#" style="--color:#DD4B39").btn.item-news-detail-socials
+					img(src="./resources/icons/google-white.svg", alt="google")
+				a(href="#" style="--color:#C4302B").btn.item-news-detail-socials
+					img(src="./resources/icons/youtube-white.svg", alt="youtube")
+				a(href="#" style="--color:#3F729B").btn.item-news-detail-socials
+					img(src="./resources/icons/instagram-white.svg", alt="instagram")
+			.news-detail-comments
+				.block-title
+					h2 Bình luận
+						span (703)
+				.comments-list
+					-for(i=0;i<3;i++)
+						.comment__item
+							.comment__avatar.overflow-hidden
+								img.object-cover.fullsize(src="./resources/images/news/avt.png", alt="avt")
+							.comment__text
+								.comment__block
+									.comment__name Họ và tên
+									.btn.btn-reply Trả lời
+								.comment__date 18/08/2020
+								.comment__content
+									p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam tristique consectetur duis vestibulum fringilla ultrices diam malesuada. Mauris laoreet morbi magnis aenean. Sagittis blandit mauris dictum facilisis. Ut sit eleifend facilisis nullam.
+									p In adipiscing nullam risus, morbi vestibulum sapien eget a ultricies. Feugiat aliquet potenti at lorem at platea amet. Et dui tellus id iaculis ultrices malesuada aliquet praesent dolor. Eget vivamus aliquam commodo ut vel senectus
+						// COMMENT HAS CLASS 'reply' => ITEM REPLY
+						.comment__item.reply
+							.comment__avatar.overflow-hidden
+								img.object-cover.fullsize(src="./resources/images/news/avt.png", alt="avt")
+							.comment__text
+								.comment__block
+									.comment__name Họ và tên
+									.btn.btn-reply Trả lời
+								.comment__date 18/08/2020
+								.comment__content
+									p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam tristique consectetur duis vestibulum fringilla ultrices diam malesuada. Mauris laoreet morbi magnis aenean. Sagittis blandit mauris dictum facilisis. Ut sit eleifend facilisis nullam.
+									p In adipiscing nullam risus, morbi vestibulum sapien eget a ultricies. Feugiat aliquet potenti at lorem at platea amet. Et dui tellus id iaculis ultrices malesuada aliquet praesent dolor. Eget vivamus aliquam commodo ut vel senectus
+			.news-detail-form-comments
+				.block-title
+					h2 Gửi nhận xét của bạn
+				ul.form-tutorial
+					li.note__item 1. Đánh giá của bạn về sản phẩm này
+						.rating-input.rating-input--size-20px(data-rate="3")
+							-for(i=0;i<5;i++)
+								.star
+									img.svg(src="./resources/icons/rate.svg", alt="rate")
+					li.note__item 2. Viết nhận xét của bạn vào bên dưới
+				.comments__form
+					form(action="#")
+						.row
+							.form-group.col-md-6
+								input.input-control(type="text" placeholder="Tên của bạn")
+							.form-group.col-md-6
+								input.input-control(type="text" placeholder="Email của bạn")
+							.form-group.col-12
+								textarea.input-control(placeholder="Lời nhắn của bạn muốn gửi đến chúng tôi")
+								span.note Vui lòng nhập tiếng việt có dấu
+							.form-group.form-button.col-12
+								btn.btn.btn-submit BÌNH LUẬN

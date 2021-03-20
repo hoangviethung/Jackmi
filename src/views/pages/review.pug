@@ -1,0 +1,59 @@
+extends ../layouts/_layout
+
+block var
+	- let title = "Review"
+block banner,breadcrumb
+	include ../layouts/_breadcrumb
+block main
+	.cartAnnounce
+		.container
+			.cartAnnounce__wrapper.d-flex.align-center
+				span.mdi.mdi-alert-circle-outline 
+				p Miễn phí giao hàng cho đơn hàng tối thiểu 1 tỉ đồng
+	section.Profile
+		.container
+			.row
+				.col-left
+					include ../components/profile/aside
+				.col-right
+					section.Review
+						.profile-table-wrapper
+							.profile__title.d-flex.align-center.flex-wrap
+								h2.text-uppercase ĐÁNH GIÁ CỦA TÔI 
+									span (4)
+							.review__list
+								-for(x=0;x<3;x++)
+									.review__item
+										.item__img
+											img(src="./resources/images/products/thumbnail.png", alt="thumbnail")
+										.item__information
+											h2.name-product Tên đầy đủ của sản phẩm này là...
+											span.date-review dd-mm-yyyy
+											.rate-review
+												// TRUYỂN DATA SỐ SAO ĐÁN VÀO ATTR "DATA-RATE" ĐỂ FILL MÀU
+												.rating-input(data-rate="3")
+													-for(i=0;i<5;i++)
+														.star
+															img.svg(src="./resources/icons/rate.svg", alt="rate")
+												// THÊM ATTR "FAILED" ĐỂ ĐỔI THÀNH MÀU ĐỎ
+												span.rate-status Đã duyệt
+											.content-review
+												p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.
+								-for(j=0;j<3;j++)
+									.review__item
+										.item__img
+											img(src="./resources/images/products/thumbnail.png", alt="thumbnail")
+										.item__information
+											h2.name-product Tên đầy đủ của sản phẩm này là...
+											span.date-review dd-mm-yyyy
+											.rate-review
+												// TRUYỂN DATA SỐ SAO ĐÁN VÀO ATTR "DATA-RATE" ĐỂ FILL MÀU
+												.rating-input(data-rate="5")
+													-for(i=0;i<5;i++)
+														.star
+															img.svg(src="./resources/icons/rate.svg", alt="rate")
+												// THÊM ATTR "FAILED" ĐỂ ĐỔI THÀNH MÀU ĐỎ
+												span.rate-status(failed) Thất bại
+											.content-review
+												p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.
+						include ../layouts/_pagination

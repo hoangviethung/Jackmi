@@ -1,0 +1,200 @@
+.item-products-wrapper
+	.product-wrapper.has-shadow
+		.product__block
+			.product__image
+				img.object-cover.fullsize.lazyload.blur-up(data-src=`resources/images/products/products-homepage-01.jpg`, alt="PRODUCT")
+			.product__favorite
+				.btn-add-favorite
+			.product__buttons.desktop
+				.btn.btn__preview Xem nhanh
+				.btn.btn__add-cart
+					span.fal.fa-shopping-cart
+		.product__text
+			.product__name
+				h3.lcl.lcl-2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem ipsam repellendus omnis quis? Quas, aspernatur a. Maxime, cum dolorem corporis fugit libero, illum blanditiis saepe repellendus optio error doloribus suscipit?
+			// .product__description
+				p.lcl.lcl-2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet atque numquam necessitatibus quibusdam repellendus, sint dolor fugiat rerum iusto doloribus libero deleniti velit illum placeat suscipit ratione temporibus omnis eum?
+		.product__price
+			p.original-deal
+				span 18.200.000
+				| đ
+			p
+				span 36.400.000đ
+				| đ
+		.product__moreinfomation
+			.rate-review
+				// TRUYỂN DATA SỐ SAO ĐÁN VÀO ATTR "DATA-RATE" ĐỂ FILL MÀU
+				.rating-input(data-rate="5")
+					-for(i=0;i<5;i++)
+						.star
+							img.svg(src="./resources/icons/rate.svg", alt="rate")
+				.rate-count (100)
+			.count-sold Đã bán
+				span 2000
+		.product__buttons.mobile
+			.btn.btn__preview Xem nhanh
+			.btn.btn__add-cart
+				span.fal.fa-shopping-cart
+		.product__quickview
+			.row.no-gutters
+				.col-md-6
+					.swiper-container.quickview__slider
+						.swiper-wrapper
+							.swiper-slide
+								.quickview__img
+									img(src="resources/images/products/products-homepage-01.jpg", alt="")
+							.swiper-slide
+								.quickview__img
+									img(src="resources/images/products/products-homepage-01.jpg", alt="")
+							.swiper-slide
+								.quickview__img
+									img(src="resources/images/products/products-homepage-01.jpg", alt="")
+							.swiper-slide
+								.quickview__img
+									img(src="resources/images/products/products-homepage-01.jpg", alt="")
+				.col-md-6
+					.quickview__information
+						h2.quickview__title Cluse La Boheme Rose Gold
+						p.quickview__price
+							del $60.00
+							ins $45.00
+						p.quickview__description Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste dolores odit ipsa porro repellat. Ut molestiae tempore libero, labore dolore hic neque vitae error possimus nostrum quis eligendi aperiam voluptates.
+						.product__color.filter-select
+							h4.title-item-content Màu sắc: 
+								span.result
+							.items-checkbox-selector.list-color
+								label.item-color(style="--color:#6EB2FB")
+									.checkbox__item
+										input(type="checkbox" value="Màu A")
+								label.item-color(style="--color:#00D3CA")
+									.checkbox__item
+										input(type="checkbox" value="Màu B")
+								label.item-color(style="--color:#F62F5E")
+									.checkbox__item
+										input(type="checkbox" value="Màu C")
+								label.item-color(style="--color:#FE5C07")
+									.checkbox__item
+										input(type="checkbox" value="Màu D")
+								label.item-color(style="--color:#F8E71C")
+									.checkbox__item
+										input(type="checkbox" value="Màu E")
+								label.item-color(style="--color:#9013FE")
+									.checkbox__item
+										input(type="checkbox" value="Màu F")
+						.product__size.filter-select
+							h4.title-item-content Kích thước
+								a(href="#" data-fancybox data-src="#choose-size-guide") (Hướng dẫn chọn size):
+								span.result
+							.items-checkbox-selector.list-size
+								label.item-size
+									.checkbox__item
+										input(type="checkbox" value="XS")
+										h5.name-size XS
+								label.item-size
+									.checkbox__item
+										input(type="checkbox" value="S")
+										h5.name-size S
+								label.item-size
+									.checkbox__item
+										input(type="checkbox" value="M")
+										h5.name-size M
+								label.item-size
+									.checkbox__item
+										input(type="checkbox" value="L")
+										h5.name-size L
+								label.item-size
+									.checkbox__item
+										input(type="checkbox" value="XL")
+										h5.name-size XL
+						.product__buttons
+							h4.title-item-content Số lượng
+							.list-button
+								.item-button
+									.product__quantity
+										.minus -
+										input.quantity(type="text" value="1" min="1" max="5")
+										.plus +
+								.item-button
+									.btn.btn-primary.btn-normal
+										.icon
+											img(src="./resources/icons/cart.png", alt="cart")
+										span Chọn mua
+						.product__buttons.quickview__detail
+							h4.title-item-content 
+								a.btn(href="product-detail") Xem chi tiết >>
+		.product__quickbuy
+			.row.no-gutters
+				.col-md-12
+					.row.no-gutters
+						.quickbuy__img
+							img(src="resources/images/products/products-homepage-01.jpg", alt="")
+						.quickbuy__content
+							h2.quickbuy__title Cluse La Boheme Rose Gold
+							p.quickbuy__price
+								del $60.00
+								ins $45.00
+				.col-md-12
+					.quickbuy__information
+						.product__color.filter-select
+							h4.title-item-content Màu sắc: 
+								span.result
+							.items-checkbox-selector.list-color
+								label.item-color(style="--color:#6EB2FB")
+									.checkbox__item
+										input(type="checkbox" value="Màu A")
+								label.item-color(style="--color:#00D3CA")
+									.checkbox__item
+										input(type="checkbox" value="Màu B")
+								label.item-color(style="--color:#F62F5E")
+									.checkbox__item
+										input(type="checkbox" value="Màu C")
+								label.item-color(style="--color:#FE5C07")
+									.checkbox__item
+										input(type="checkbox" value="Màu D")
+								label.item-color(style="--color:#F8E71C")
+									.checkbox__item
+										input(type="checkbox" value="Màu E")
+								label.item-color(style="--color:#9013FE")
+									.checkbox__item
+										input(type="checkbox" value="Màu F")
+						.product__size.filter-select
+							h4.title-item-content Kích thước
+								a(href="#" data-fancybox data-src="#choose-size-guide") (Hướng dẫn chọn size):
+								span.result
+							.items-checkbox-selector.list-size
+								label.item-size
+									.checkbox__item
+										input(type="checkbox" value="XS")
+										h5.name-size XS
+								label.item-size
+									.checkbox__item
+										input(type="checkbox" value="S")
+										h5.name-size S
+								label.item-size
+									.checkbox__item
+										input(type="checkbox" value="M")
+										h5.name-size M
+								label.item-size
+									.checkbox__item
+										input(type="checkbox" value="L")
+										h5.name-size L
+								label.item-size
+									.checkbox__item
+										input(type="checkbox" value="XL")
+										h5.name-size XL
+						.product__buttons
+							h4.title-item-content Số lượng
+							.list-button
+								.item-button
+									.product__quantity
+										.minus -
+										input.quantity(type="text" value="1" min="1" max="5")
+										.plus +
+								.item-button
+									.btn.btn-primary.btn-normal
+										.icon
+											img(src="./resources/icons/cart.png", alt="cart")
+										span Chọn mua
+						.product__buttons.quickview__detail
+							h4.title-item-content 
+								a.btn(href="product-detail") Xem chi tiết >>

@@ -1,0 +1,36 @@
+section.news
+	.container
+		.row
+			.col-md-9.news__list
+				.row
+					-for(i=0;i<8;i++)
+						.col-sm-6.col-lg-4.news__item
+							a(href="news-detail.html").news-item-wrapper
+								.news__image.overflow-hidden
+									img.object-cover.fullsize(src=`resources/images/news/news-item-01.jpg`, alt="NEWS")
+								.news__text
+									.news__title
+										h3.lcl.lcl-2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem ipsam repellendus omnis quis? Quas, aspernatur a. Maxime, cum dolorem corporis fugit libero, illum blanditiis saepe repellendus optio error doloribus suscipit?
+									.news__description
+										p.lcl.lcl-3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet atque numquam necessitatibus quibusdam repellendus, sint dolor fugiat rerum iusto doloribus libero deleniti velit illum placeat suscipit ratione temporibus omnis eum?
+									.news__block
+										.news__time 22/07/2020
+										.btn.btn-news-detail Chi tiết
+				include ../../layouts/_pagination
+			.col-md-3.news__other
+				.newsOther-wrapper
+					.block-title
+						h2 Tin khuyến mãi
+						.slider-item-other-buttons
+							.slider-item-other-prev
+							.slider-item-other-next
+					.slider-news-other
+						.swiper-container
+							.swiper-wrapper.newsOther__list
+								-for(i=0;i<6;i++)
+									a(href="news-detail.html").swiper-slide.newsOther__item
+										.newsOther__image.overflow-hidden
+											img.object-cover.fullsize(src="./resources/images/news/news-other-01.jpg", alt="news-others")
+										.newsOther__text
+											.newsOther__title.lcl.lcl-2 Tiêu đề tin tức này dài đến hai hàng nha pợn
+											.newsOther__description.lcl.lcl-3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisi, tellus leo elementum etiam scelerisque.

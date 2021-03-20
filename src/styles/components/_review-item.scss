@@ -1,0 +1,137 @@
+.review__item {
+	display: flex;
+	flex-wrap: wrap;
+	padding-bottom: 12px;
+	border-bottom: 1px solid #e5e5e5;
+	.item__img {
+		-ms-flex: 0 0 100%;
+		-webkit-box-flex: 0;
+		flex: 0 0 100px;
+		max-width: 100px;
+		@media (max-width: 575.98px) {
+			-ms-flex: 0 0 100%;
+			-webkit-box-flex: 0;
+			flex: 0 0 70px;
+			max-width: 70px;
+		}
+	}
+	.item__information {
+		-ms-flex-preferred-size: 0;
+		flex-basis: 0;
+		-ms-flex-positive: 1;
+		flex-grow: 1;
+		max-width: 100%;
+		padding-left: 24px;
+	}
+	.name-product {
+		font-size: 1.7rem;
+		font-weight: 700;
+	}
+	.date-review {
+		display: inline-block;
+		color: rgba($color: #2e2e2e, $alpha: 0.5);
+		font-size: 1.1rem;
+		margin-top: 10px;
+	}
+	.rate-review {
+		display: flex;
+		align-items: flex-end;
+		margin-top: 10px;
+		.rating-input {
+			margin-right: 16px;
+		}
+	}
+	.rate-status {
+		color: #333333;
+		font-size: 1.1rem;
+		display: inline-block;
+		+ .rate-status {
+			margin-left: 8px;
+		}
+		&[failed] {
+			color: red;
+		}
+		&[success] {
+			color: #4ce2a7;
+		}
+		&[answered] {
+			color: #2f80ed;
+		}
+	}
+	.content-review {
+		margin-top: 10px;
+		p {
+			font-size: 1.1rem;
+		}
+		a {
+			font-size: 1.1rem;
+			color: #2f80ed;
+			margin-left: 8px;
+		}
+	}
+	+ .review__item {
+		margin-top: 12px;
+	}
+	&--productDetail {
+		padding-bottom: 24px;
+		.item__information {
+			-ms-flex: 0 0 100%;
+			flex: 0 0 100%;
+			max-width: 100%;
+			padding-left: 0;
+			// @media (max-width: 1024.98px) {
+			// 	-ms-flex: 0 0 100%;
+			// 	-webkit-box-flex: 0;
+			// 	flex: 0 0 150px;
+			// 	max-width: 150px;
+			// }
+			// @media (max-width: 575.98px) {
+			// 	-ms-flex: 0 0 100%;
+			// 	flex: 0 0 100%;
+			// 	max-width: 100%;
+			// }
+		}
+		.content-review {
+			-ms-flex-preferred-size: 0;
+			flex-basis: 0;
+			-ms-flex-positive: 1;
+			flex-grow: 1;
+			max-width: 100%;
+			margin-top: 0;
+			@media (max-width: 575.98px) {
+				padding-left: 0;
+				margin-top: 14px;
+			}
+		}
+		.review__list {
+			padding-left: 12px;
+		}
+		.rate-review {
+			margin-top: 0;
+			padding-left: 12px;
+		}
+		.group-info {
+			display: flex;
+			align-items: center;
+		}
+		.name-product {
+			font-size: 1.6rem;
+			font-weight: 400;
+		}
+		.date-review {
+			margin-top: 5px;
+		}
+		.content-review {
+			margin-top: 14px;
+			p {
+				font-size: 1.4rem;
+			}
+		}
+		+ .review__item {
+			margin-top: 36px;
+		}
+		@media (max-width: 575.98px) {
+			padding-bottom: 12px;
+		}
+	}
+}

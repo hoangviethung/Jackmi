@@ -1,0 +1,99 @@
+extends ../layouts/_layout
+
+block var
+	- let title = "Địa chỉ thanh toán"
+block banner,breadcrumb
+	include ../layouts/_breadcrumb
+block main
+	.cartAnnounce
+		.container
+			.cartAnnounce__wrapper.d-flex.align-center
+				span.mdi.mdi-alert-circle-outline 
+				p Miễn phí giao hàng cho đơn hàng tối thiểu 1 tỉ đồng
+	section.Profile
+		.container
+			.row
+				.col-left
+					include ../components/profile/aside
+				.col-right
+					section.profile-table-wrapper
+						h2.fs-24.text-uppercase Địa chỉ của tôi
+						p.text-muted.mb-0 Chọn địa chỉ để giao hàng tới
+						.checkout.cartList
+							span.btn.btn-signinup(data-fancybox data-src="#popup-add-address") Thêm địa chỉ mới
+							.card.checkout__saveAddress
+								.row
+									.col-lg-6
+										.card.border.mb-0.shadow-none
+											.card-body
+												//- .custom-control.custom-radio
+												//- 	input#radio-1.custom-control-input(type='radio' name='customRadio' checked='')
+												label.custom-control-label.font-weight-bold(for='radio-1') 3456 Hải Thượng Lãn Ông, P.13, Q.5, TP. Hồ Chí Minh
+												//- br
+												p.mb-0.font-weight-bold Tên khách hàng
+												//- p.mb-0.m-t-10 3456 Hải Thượng Lãn Ông, P.13, Q.5, TP. Hồ Chí Minh
+												p.mb-0 +84 987 654 321
+												p.mb-0
+													a.text-secondary(href='mailto:usermail@gmail.com' target='_top') usermail@gmail.com
+												.card-buttons
+													a.card-edit(href="#") Sửa
+													a.card-remove(href="#") Xóa
+									.col-lg-6
+										.card.border.mb-0.shadow-none
+											.card-body
+												//- .custom-control.custom-radio
+												//- 	input#radio-2.custom-control-input(type='radio' name='customRadio' checked='')
+												label.custom-control-label.font-weight-bold(for='radio-2') 3456 Hải Thượng Lãn Ông, P.13, Q.5, TP. Hồ Chí Minh
+												//- br
+												p.mb-0.font-weight-bold Tên khách hàng
+												//- p.mb-0.m-t-10 3456 Hải Thượng Lãn Ông, P.13, Q.5, TP. Hồ Chí Minh
+												p.mb-0 +84 987 654 321
+												p.mb-0
+													a.text-secondary(href='mailto:usermail@gmail.com' target='_top') usermail@gmail.com
+												.card-buttons
+													a.card-edit(href="#") Sửa
+													a.card-remove(href="#") Xóa
+	.d-none
+		#popup-add-address
+			form.cartList__wrapper
+				//- .cartList__title.d-flex.align-center.flex-wrap
+				//- 	h2.fs-24.text-uppercase Thêm địa chỉ
+				.checkout__form.row
+					.form-group.style-2.col-md-6
+						label Họ và tên
+						input.input-control(name="Name" placeholder="Name")
+					.form-group.style-2.col-md-6
+						label Email
+						input.input-control(name="Email" placeholder="Email")
+					.form-group.style-2.col-md-6
+						label Số diện thoại
+						input.input-control(name="Phone" placeholder="Phone")
+					.form-group.style-2.col-md-6
+						label Địa chỉ
+						input.input-control(name="Address" placeholder="Address")
+					.form-group.style-2.col-md-6
+						label Tỉnh/Thành phố
+						select.input-control(name="City" placeholder="City")
+							option Chọn Tỉnh/Thành phố
+							option Tp. Hồ Chí Minh
+							option Tp. Hồ Chí Minh
+							option Tp. Hồ Chí Minh
+							option Tp. Hồ Chí Minh
+					.form-group.style-2.col-md-6
+						label Quận/huyện
+						select.input-control(name="District" placeholder="District")
+							option Chọn Quận/huyện
+							option Tp. Hồ Chí Minh
+							option Tp. Hồ Chí Minh
+							option Tp. Hồ Chí Minh
+							option Tp. Hồ Chí Minh
+					.form-group.style-2.col-md-6
+						label Phường/xã
+						select.input-control(name="Ward" placeholder="Ward")
+							option Chọn Phường/xã
+							option Tp. Hồ Chí Minh
+							option Tp. Hồ Chí Minh
+							option Tp. Hồ Chí Minh
+							option Tp. Hồ Chí Minh
+					.form-group.form-button.col-md-12
+						button.btn.btn-signinup Thêm địa chỉ

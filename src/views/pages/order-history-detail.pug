@@ -1,0 +1,94 @@
+extends ../layouts/_layout
+
+block var
+	- let title = "Order History Detail"
+block banner,breadcrumb
+	include ../layouts/_breadcrumb
+block main
+	.cartAnnounce
+		.container
+			.cartAnnounce__wrapper.d-flex.align-center
+				span.mdi.mdi-alert-circle-outline 
+				p Miễn phí giao hàng cho đơn hàng tối thiểu 1 tỉ đồng
+	section.Profile
+		.container
+			.row
+				.col-left
+					include ../components/profile/aside
+				.col-right
+					section.WishlistWrapper
+						.profile-table-wrapper
+							.profile__title.d-flex.align-center.flex-wrap
+								h2.text-uppercase ĐƠN HÀNG
+									span.cl-brand #359498310
+									span.small-text.cl-unactive (4 sản phẩm)
+							.orderStatus
+								.orderStatus__item.active
+									p Chưa xác nhận
+								.orderStatus__item.active
+									p Khách hủy
+								.orderStatus__item.active
+									p Đã xác nhận 
+								.orderStatus__item
+									p Đang đóng gói 
+								.orderStatus__item
+									p Đang giao hàng 
+								.orderStatus__item
+									p Thành công
+							table.product-table.profile-table
+								thead
+									tr
+										th Sản phẩm
+										th Thuộc tính
+										th Giá
+										th Số lượng
+								tbody
+									-for(i=0;i<5;i++)
+										tr.item-table
+											td
+												.item-product
+													.img
+														img(src="./resources/images/products/thumbnail.png", alt="product")
+													.infomation
+														h4.lcl.lcl-1 Tên đầy đủ của sản phẩm này là ....
+														p.lcl.lcl-2 Nhập khẩu chính hãng bởi Nestlé Việt Nam ...dài đến 2 hàng
+														// SHOW IN MOBILE
+														.amount
+															p.title-table Số lượng:
+															p 1
+														.properties
+															p XXL
+															p Màu xanh
+														// SHOW IN MOBILE
+														.price
+															p.original-deal 20.000.000
+															p 18.200.000
+											// NONE IN MOBILE
+											td
+												.properties
+													p XXL
+													p Màu xanh
+											// NONE IN MOBILE
+											td
+												.price
+													p.original-deal 20.000.000
+													p 18.200.000
+											td
+												.amount
+													p 1
+							.cartSummary__prices
+								.row
+									.col-6 Số lượng sản phẩm
+									.col-6 5
+								.row
+									.col-6 Tiền hàng
+									.col-6 989.989.980 VNĐ
+								.row
+									.col-6 Phí giao hàng
+									.col-6 989.989.980 VNĐ
+								.row.cartSummary__total
+									.col-6 Tổng cộng
+									.col-6 989.989.980 VNĐ
+							.order__buttons
+								button.btn.btn-primary Hủy đơn hàng
+						include ../layouts/_pagination
