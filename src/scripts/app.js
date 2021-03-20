@@ -357,7 +357,6 @@ const customFancybox = () => {
 		hash: false,
 		closeExisting: true,
 		beforeShow: function (e) {
-			console.log(e);
 			$('#popup-signinup').find('[toggle-for="signin"]').trigger('click');
 			closeAccountMenu();
 		},
@@ -367,7 +366,6 @@ const customFancybox = () => {
 		hash: false,
 		closeExisting: true,
 		beforeShow: function (e) {
-			console.log(e);
 			$('#popup-signinup').find('[toggle-for="signup"]').trigger('click');
 			closeAccountMenu();
 		},
@@ -508,6 +506,16 @@ const filterSelect = () => {
 						str = arr.join(', ');
 					}
 				});
+				if (_this.hasClass('product__color')) {
+					const images = $('img[data-filter-color]');
+					images.each(function () {
+						$(this).removeClass('show');
+						if ($(this).attr('data-filter-color') == str) {
+							$(this).addClass('show');
+						} else {
+						}
+					});
+				}
 				result.html(str);
 			});
 		});
@@ -659,8 +667,8 @@ document.addEventListener('DOMContentLoaded', () => {
 			$.fancybox.open(popupPreview, {
 				touch: false,
 				afterShow: function () {
-					swiper  = new Swiper(".")
-				}
+					swiper = new Swiper('.');
+				},
 			});
 		});
 		btnBuy.on('click', function () {

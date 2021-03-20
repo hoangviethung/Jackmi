@@ -5,9 +5,12 @@
 			.slider-thumbs-product-detail
 				.swiper-container
 					.swiper-wrapper
-						-for(i=1;i<7;i++)
-							.swiper-slide
-								img.object-cover.fullsize(src=`./resources/images/product-detail/${i}.png`, alt="product-detail")
+						.swiper-slide
+							img.object-cover.fullsize.show(src=`./resources/images/filter/red.jpg`, alt="product-detail" data-filter-color="Red")
+							img.object-cover.fullsize(src=`./resources/images/filter/yellow.jpg`, alt="product-detail" data-filter-color="Yellow")
+						.swiper-slide
+							img.object-cover.fullsiz.show(src=`./resources/images/filter/red.jpg`, alt="product-detail" data-filter-color="Red")
+							img.object-cover.fullsize(src=`./resources/images/filter/yellow.jpg`, alt="product-detail" data-filter-color="Yellow")
 			.slider-product-detail
 				.swiper-container
 					.swiper-prev.swiper-button
@@ -15,9 +18,12 @@
 					.swiper-next.swiper-button
 						span.lnr.lnr-chevron-right
 					.swiper-wrapper
-						-for(j=1;j<7;j++)
-							.swiper-slide
-								img.object-cover.fullsize(src=`./resources/images/product-detail/${j}.png`, alt="product-detail")
+						.swiper-slide
+							img.object-cover.fullsize.show(src=`./resources/images/filter/red.jpg`, alt="product-detail" data-filter-color="Red")
+							img.object-cover.fullsize(src=`./resources/images/filter/yellow.jpg`, alt="product-detail" data-filter-color="Yellow")
+						.swiper-slide
+							img.object-cover.fullsize.show(src=`./resources/images/filter/red.jpg`, alt="product-detail" data-filter-color="Red")
+							img.object-cover.fullsize(src=`./resources/images/filter/yellow.jpg`, alt="product-detail" data-filter-color="Yellow")
 	// PRODUCT CONTENT
 	section.ProductContent
 		//- .product-info-group.clearfix
@@ -54,24 +60,12 @@
 			h4.title-item-content Màu sắc: 
 				span.result
 			.items-checkbox-selector.list-color
-				label.item-color(style="--color:#6EB2FB")
+				label.item-color(style="--color:#ff0000")
 					.checkbox__item
-						input(type="checkbox" value="Màu A")
-				label.item-color(style="--color:#00D3CA")
+						input(name="product-color" type="radio" value="Red")
+				label.item-color(style="--color:#f9ff00")
 					.checkbox__item
-						input(type="checkbox" value="Màu B")
-				label.item-color(style="--color:#F62F5E")
-					.checkbox__item
-						input(type="checkbox" value="Màu C")
-				label.item-color(style="--color:#FE5C07")
-					.checkbox__item
-						input(type="checkbox" value="Màu D")
-				label.item-color(style="--color:#F8E71C")
-					.checkbox__item
-						input(type="checkbox" value="Màu E")
-				label.item-color(style="--color:#9013FE")
-					.checkbox__item
-						input(type="checkbox" value="Màu F")
+						input(name="product-color" type="radio" value="Yellow")
 		.product__size.filter-select
 			h4.title-item-content Kích thước
 				a(href="#" data-fancybox data-src="#choose-size-guide") (Hướng dẫn chọn size):
@@ -79,23 +73,23 @@
 			.items-checkbox-selector.list-size
 				label.item-size
 					.checkbox__item
-						input(type="checkbox" value="XS")
+						input(name="prodcut-size" type="radio" value="XS")
 						h5.name-size XS
 				label.item-size
 					.checkbox__item
-						input(type="checkbox" value="S")
+						input(name="prodcut-size" type="radio" value="S")
 						h5.name-size S
 				label.item-size
 					.checkbox__item
-						input(type="checkbox" value="M")
+						input(name="prodcut-size" type="radio" value="M")
 						h5.name-size M
 				label.item-size
 					.checkbox__item
-						input(type="checkbox" value="L")
+						input(name="prodcut-size" type="radio" value="L")
 						h5.name-size L
 				label.item-size
 					.checkbox__item
-						input(type="checkbox" value="XL")
+						input(name="prodcut-size" type="radio" value="XL")
 						h5.name-size XL
 		.product__price
 			p.original-deal 36.400.000
