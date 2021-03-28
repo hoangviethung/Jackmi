@@ -211,6 +211,7 @@ const initSliderProductDetail = () => {
 			effect: 'fade',
 		},
 	);
+	return productDetailSlider;
 };
 
 const initClassNavigation = () => {
@@ -507,12 +508,10 @@ const filterSelect = () => {
 					}
 				});
 				if (_this.hasClass('product__color')) {
-					const images = $('img[data-filter-color]');
-					images.each(function () {
-						$(this).removeClass('show');
-						if ($(this).attr('data-filter-color') == str) {
-							$(this).addClass('show');
-						} else {
+					const slides = initSliderProductDetail().slides;
+					slides.each(function (index, element) {
+						if ($(element).attr('data-filter-color') == str) {
+							initSliderProductDetail().slideTo(index);
 						}
 					});
 				}

@@ -6,11 +6,11 @@
 				.swiper-container
 					.swiper-wrapper
 						.swiper-slide
-							img.object-cover.fullsize.show(src=`./resources/images/filter/red.jpg`, alt="product-detail" data-filter-color="Red")
-							img.object-cover.fullsize(src=`./resources/images/filter/yellow.jpg`, alt="product-detail" data-filter-color="Yellow")
+							img.object-cover.fullsize(src=`./resources/images/filter/red.jpg`, alt="product-detail")
 						.swiper-slide
-							img.object-cover.fullsiz.show(src=`./resources/images/filter/red.jpg`, alt="product-detail" data-filter-color="Red")
-							img.object-cover.fullsize(src=`./resources/images/filter/yellow.jpg`, alt="product-detail" data-filter-color="Yellow")
+							img.object-cover.fullsize(src=`./resources/images/filter/yellow.jpg`, alt="product-detail")
+						.swiper-slide
+							img.object-cover.fullsize(src=`./resources/images/filter/brown.jpg`, alt="product-detail")
 			.slider-product-detail
 				.swiper-container
 					.swiper-prev.swiper-button
@@ -18,12 +18,12 @@
 					.swiper-next.swiper-button
 						span.lnr.lnr-chevron-right
 					.swiper-wrapper
-						.swiper-slide
-							img.object-cover.fullsize.show(src=`./resources/images/filter/red.jpg`, alt="product-detail" data-filter-color="Red")
+						.swiper-slide(data-filter-color="Red")
+							img.object-cover.fullsize(src=`./resources/images/filter/red.jpg`, alt="product-detail" data-filter-color="Red")
+						.swiper-slide(data-filter-color="Yellow")
 							img.object-cover.fullsize(src=`./resources/images/filter/yellow.jpg`, alt="product-detail" data-filter-color="Yellow")
-						.swiper-slide
-							img.object-cover.fullsize.show(src=`./resources/images/filter/red.jpg`, alt="product-detail" data-filter-color="Red")
-							img.object-cover.fullsize(src=`./resources/images/filter/yellow.jpg`, alt="product-detail" data-filter-color="Yellow")
+						.swiper-slide(data-filter-color="Brown")
+							img.object-cover.fullsize(src=`./resources/images/filter/brown.jpg`, alt="product-detail" data-filter-color="Brown")
 	// PRODUCT CONTENT
 	section.ProductContent
 		//- .product-info-group.clearfix
@@ -66,6 +66,9 @@
 				label.item-color(style="--color:#f9ff00")
 					.checkbox__item
 						input(name="product-color" type="radio" value="Yellow")
+				label.item-color(style="--color:#5f2007")
+					.checkbox__item
+						input(name="product-color" type="radio" value="Brown")
 		.product__size.filter-select
 			h4.title-item-content Kích thước
 				a(href="#" data-fancybox data-src="#choose-size-guide") (Hướng dẫn chọn size):
